@@ -3,7 +3,7 @@
 @inject IJSRuntime JSRuntime
 
 <div @onclick="@(e => DisplayGameStats())" style="cursor: pointer">
-    <Card>
+    <Card Shadow="Shadow.Default">
         <CardBody>
             <Row RowColumns="RowColumns.Are2">
                 @if (Data != null)
@@ -20,8 +20,8 @@
                                     <FigureImage Source="@path" />
                                 }
                             </Figure>
-                            <Text TextSize="TextSize.ExtraSmall">@Data.team1_wins</Text>
                         </Div>
+                        <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@Data.team1_wins</Text>
                     </Column>
                     <Column TextAlignment="TextAlignment.Center">
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
@@ -34,8 +34,8 @@
                                     <FigureImage Source="@path" />
                                 }
                             </Figure>
-                            <Text TextSize="TextSize.ExtraSmall">@Data.team2_wins</Text>
                         </Div>
+                        <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@Data.team2_wins</Text>
                     </Column>
                 }
                 else
@@ -74,7 +74,7 @@
     {
         IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
 
-        logoSize = IsMobile ? FigureSize.Is16x16 : FigureSize.Is32x32;
+        logoSize = IsMobile ? FigureSize.Is24x24 : FigureSize.Is32x32;
 
         base.OnInitialized();
     }

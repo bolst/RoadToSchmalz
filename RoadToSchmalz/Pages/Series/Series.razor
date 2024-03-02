@@ -10,13 +10,13 @@
             <Row Padding="Padding.Is2.OnY">
                 <Game GameData="@g" />
             </Row>
+
         }
     </Column>
 </Row>
 
 @code {
     private Data.Matchup? matchup { get; set; } = null;
-
     protected override void OnInitialized()
     {
         Uri uri = new Uri(navManager.Uri);

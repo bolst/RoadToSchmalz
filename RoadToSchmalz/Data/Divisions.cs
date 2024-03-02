@@ -8,7 +8,7 @@ namespace RoadToSchmalz.Data
             POLLOCK,
             ORR,
             TOD,
-            Schmalz,
+            STOBBS,
             YECK,
             BLOOMFIELD,
             DOHERTY,
@@ -33,7 +33,7 @@ namespace RoadToSchmalz.Data
                 case CONFERENCE.EAST:
                     return new List<DIVISION> { DIVISION.ORR, DIVISION.TOD };
                 case CONFERENCE.WEST:
-                    return new List<DIVISION> { DIVISION.Schmalz, DIVISION.YECK };
+                    return new List<DIVISION> { DIVISION.STOBBS, DIVISION.YECK };
                 case CONFERENCE.SOUTH:
                     return new List<DIVISION> { DIVISION.BLOOMFIELD, DIVISION.DOHERTY };
                 case CONFERENCE.NULL:

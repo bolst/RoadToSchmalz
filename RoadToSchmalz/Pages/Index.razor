@@ -102,7 +102,6 @@
     private List<Data.Matchups>? east_matchups { get; set; } = null;
     private List<Data.Matchups>? west_matchups { get; set; } = null;
     private List<Data.Matchups>? south_matchups { get; set; } = null;
-    private List<Data.Matchups>? matchups { get; set; } = null;
 
     private bool IsMobile { get; set; } = false;
 
@@ -120,7 +119,7 @@
         east_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.ORR);
         east_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.TOD)[0].matchups);
 
-        west_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.Schmalz);
+        west_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.STOBBS);
         west_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.YECK)[0].matchups);
 
         south_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);

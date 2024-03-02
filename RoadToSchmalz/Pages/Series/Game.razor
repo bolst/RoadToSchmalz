@@ -11,7 +11,7 @@
     string away_logo = $"logos/{away_team_stripped}.png";
     <Row Width="Width.Is100" Margin="Margin.IsAuto">
         <div @onclick="@(e => NavToGame(GameData.game_id))" style="cursor: pointer">
-            <Card>
+            <Card Shadow="Shadow.Small">
                 <CardBody TextAlignment="TextAlignment.Center">
                     <Row>
                         @if (!IsMobile)
@@ -25,12 +25,22 @@
                             </Figure>
                         </Column>
                         <Column>
-                            <Heading Position="Position.Relative.Top.Is50.Translate.MiddleY"
-                                Padding="Padding.Is3.FromBottom">
-                                @GameData.home_goal_count -
-                                @GameData.visiting_goal_count</Heading>
-                            <Text Padding="Padding.Is3.OnX">@FormatDateTime(GameData.date_time)</Text>
-                            @if(GameData.game_status.Contains("Final"))
+                            @if (IsMobile)
+                            {
+                                <Heading>
+                                    @GameData.home_goal_count -
+                                    @GameData.visiting_goal_count</Heading>
+                            }
+                            else
+                            {
+                                <Heading Position="Position.Relative.Top.Is50.Translate.MiddleY"
+                                    Padding="Padding.Is3.FromBottom">
+                                    @GameData.home_goal_count -
+                                    @GameData.visiting_goal_count</Heading>
+                            }
+                            <Text>@FormatDateTime(GameData.date_time)</Text>
+                            <br>
+                            @if (GameData.game_status.Contains("Final"))
                             {
                                 <Badge Color="Color.Success">@GameData.game_status</Badge>
                             }
@@ -74,7 +84,8 @@
 
         if (DateTime.TryParseExact(date_time, pattern, null, System.Globalization.DateTimeStyles.None, out parsedDate))
         {
-            return parsedDate.ToString("MMM dd hh:mm tt");
+            return (IsMobile ? parsedDate.ToString("MM/dd hh:mm") : parsedDate.ToString("MMM dd hh:mm")) +
+            parsedDate.ToString("tt").ToLower();
         }
         return date_time;
     }

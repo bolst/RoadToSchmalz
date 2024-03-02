@@ -6,77 +6,44 @@
     <Bar Background="Background.Light">
         <BarBrand>
             <BarItem>
-                <BarLink To="" TextColor="TextColor.Primary" TextSize="TextSize.Heading2">
-                    <Row>
-                        <Column ColumnSize="ColumnSize.Is1.OnTablet.Is3.OnMobile">
-                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                <Image Source="logos/playoffs.png" Fluid />
-                            </Div>
-                        </Column>
-                        <Column>
-                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                2024 PJHL PLAYOFFS
-                            </Div>
-                        </Column>
-                    </Row>
-                </BarLink>
+                <Row>
+                    <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
+                        @PjhlLogo
+                    </Column>
+                    <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
+                        @PageTitle
+                    </Column>
+                    <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
+                        @BoltonJersey
+                    </Column>
+                </Row>
             </BarItem>
         </BarBrand>
         <BarMenu>
             <BarStart>
-                <BarItem Margin="Margin.IsAuto">
-                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topplayers">
-                        TOP PLAYERS
-                    </BarLink>
-                </BarItem>
-                <BarItem Margin="Margin.IsAuto">
-                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topgoalies">
-                        TOP GOALIES
-                    </BarLink>
-                </BarItem>
+                @TopPlayersBarItem
+                @TopGoaliesBarItem
             </BarStart>
         </BarMenu>
     </Bar>
 }
-else
+else @* if computer or tablet *@
 {
     <Bar Visible=false Breakpoint="Breakpoint.Desktop" Background="Background.Light">
         <BarBrand>
-            <BarItem>
-                <BarLink To="" TextColor="TextColor.Primary" TextSize="TextSize.Heading2">
-                    <Row>
-                        <Column ColumnSize="ColumnSize.Is1.OnTablet.Is3.OnMobile">
-                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                <Image Source="logos/playoffs.png" Fluid />
-                            </Div>
-                        </Column>
-                        <Column>
-                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                2024 PJHL PLAYOFFS
-                            </Div>
-                        </Column>
-                    </Row>
-                </BarLink>
+            <BarItem Margin="Margin.IsAuto">
+                @PjhlLogo
             </BarItem>
         </BarBrand>
         <BarMenu>
             <BarStart>
-                <BarItem>
-                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topplayers">
-                        TOP PLAYERS
-                    </BarLink>
-                </BarItem>
-                <BarItem>
-                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topgoalies">
-                        TOP GOALIES
-                    </BarLink>
-                </BarItem>
+                @PageTitle
+                @TopPlayersBarItem
+                @TopGoaliesBarItem
             </BarStart>
             <BarEnd>
                 <BarItem Margin="Margin.IsAuto" TextAlignment="TextAlignment.End">
-                    <BarLink To="https://github.com/bolst" Target="Target.Blank" Width="Width.Is75">
-                        <Image Source="Bolton.jpg" Width="Width.Is25" />
-                    </BarLink>
+                    @BoltonJersey
                 </BarItem>
             </BarEnd>
         </BarMenu>
@@ -86,8 +53,53 @@ else
 @code {
     private bool IsMobile { get; set; } = false;
 
+    private static readonly string PjhlUrl = "https://www.thepjhl.ca/";
+    private static readonly string GitUrl = "https://github.com/bolst";
+    private static readonly string PjhlLogoSource = "logos/playoffs.png";
+
+    #region components
+    private RenderFragment PageTitle = @<BarLink To="" TextColor="TextColor.Primary" TextSize="TextSize.Heading1"
+        TextAlignment="TextAlignment.Start" TextWeight="TextWeight.Bold">
+        2024 PJHL PLAYOFFS
+    </BarLink>;
+    private RenderFragment PjhlLogo = @<BarLink To="@PjhlUrl" Target="Target.Blank" Width="Width.Is25"
+        TextAlignment="TextAlignment.Center">
+        <Image Source="@PjhlLogoSource" Width="Width.Is50" />
+    </BarLink>;
+    private RenderFragment TopPlayersBarItem = @<BarItem Margin="Margin.IsAuto">
+        <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" TextSize="TextSize.Default" To="/topplayers">
+            TOP PLAYERS
+        </BarLink>
+    </BarItem>;
+    private RenderFragment TopGoaliesBarItem = @<BarItem Margin="Margin.IsAuto">
+        <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" TextSize="TextSize.Default" To="/topgoalies">
+            TOP GOALIES
+        </BarLink>
+    </BarItem>;
+    private RenderFragment BoltonJersey = @<BarLink To="@GitUrl" Target="Target.Blank" Width="Width.Is75">
+        <Image Source="Bolton.jpg" Width="Width.Is25" Style="border-radius: 3px" />
+    </BarLink>;
+    #endregion
+
     protected override async Task OnInitializedAsync()
     {
         IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+        if (IsMobile)
+        {
+            PageTitle = @<BarLink To="" TextColor="TextColor.Primary" TextSize="TextSize.Heading2" TextWeight="TextWeight.Bold">
+        <Row>2024 PJHL</Row>
+        <Row>PLAYOFFS</Row>
+    </BarLink>;
+
+            PjhlLogo = @<BarLink To="@PjhlUrl" Target="Target.Blank" Width="Width.Is100"
+        Position="Position.Relative.Top.Is50.Translate.MiddleY">
+        <Image Source="@PjhlLogoSource" Width="Width.Is100" />
+    </BarLink>;
+
+            BoltonJersey = @<BarLink To="@GitUrl" Target="Target.Blank" Width="Width.Is100"
+        Position="Position.Relative.Top.Is50.Translate.MiddleY">
+        <Image Source="Bolton.jpg" Width="Width.Is75" />
+    </BarLink>;
+        }
     }
 }

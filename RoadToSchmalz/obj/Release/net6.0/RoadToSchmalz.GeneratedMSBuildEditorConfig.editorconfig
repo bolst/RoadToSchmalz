@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RoadToSchmalz
+build_property.RootNamespace = RoadToSchmalz
+build_property.ProjectDir = C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/Layout/FooterMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/Layout/TopMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVG9wTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/Matchup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXRjaHVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/StatCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdGF0Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Leaders/Top Goalies/TopGoalies.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhZGVyc1xUb3AgR29hbGllc1xUb3BHb2FsaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Leaders/Top Players/TopPlayers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhZGVyc1xUb3AgUGxheWVyc1xUb3BQbGF5ZXJzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Series/Game.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VyaWVzXEdhbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Series/Series.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VyaWVzXFNlcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

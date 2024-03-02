@@ -6,7 +6,7 @@
     @if (Stats != null || GoalieStats != null)
     {
         <div @onclick="@(e => NavToPlayerProfile(Stats.row.player_id))" style="cursor: pointer">
-            <Card>
+            <Card Shadow="Shadow.Default">
                 <CardBody TextAlignment="TextAlignment.Center">
                     <Row RowColumns="@RowCols">
                         @if (!IsMobile)

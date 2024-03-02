@@ -46,3 +46,4 @@ C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\obj\Debug\net6.0\refint\RoadToSchma
 C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\obj\Debug\net6.0\RoadToSchmalz.pdb
 C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\obj\Debug\net6.0\RoadToSchmalz.genruntimeconfig.cache
 C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\obj\Debug\net6.0\ref\RoadToSchmalz.dll
+C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\obj\Debug\net6.0\RoadToSchmalz.sourcelink.json
