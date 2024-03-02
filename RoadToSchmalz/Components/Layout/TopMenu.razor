@@ -1,0 +1,93 @@
+﻿@using Blazorise.Localization
+@inject IJSRuntime JSRuntime
+
+@if (IsMobile)
+{
+    <Bar Background="Background.Light">
+        <BarBrand>
+            <BarItem>
+                <BarLink To="" TextColor="TextColor.Primary" TextSize="TextSize.Heading2">
+                    <Row>
+                        <Column ColumnSize="ColumnSize.Is1.OnTablet.Is3.OnMobile">
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                <Image Source="logos/playoffs.png" Fluid />
+                            </Div>
+                        </Column>
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                2024 PJHL PLAYOFFS
+                            </Div>
+                        </Column>
+                    </Row>
+                </BarLink>
+            </BarItem>
+        </BarBrand>
+        <BarMenu>
+            <BarStart>
+                <BarItem Margin="Margin.IsAuto">
+                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topplayers">
+                        TOP PLAYERS
+                    </BarLink>
+                </BarItem>
+                <BarItem Margin="Margin.IsAuto">
+                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topgoalies">
+                        TOP GOALIES
+                    </BarLink>
+                </BarItem>
+            </BarStart>
+        </BarMenu>
+    </Bar>
+}
+else
+{
+    <Bar Visible=false Breakpoint="Breakpoint.Desktop" Background="Background.Light">
+        <BarBrand>
+            <BarItem>
+                <BarLink To="" TextColor="TextColor.Primary" TextSize="TextSize.Heading2">
+                    <Row>
+                        <Column ColumnSize="ColumnSize.Is1.OnTablet.Is3.OnMobile">
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                <Image Source="logos/playoffs.png" Fluid />
+                            </Div>
+                        </Column>
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                2024 PJHL PLAYOFFS
+                            </Div>
+                        </Column>
+                    </Row>
+                </BarLink>
+            </BarItem>
+        </BarBrand>
+        <BarMenu>
+            <BarStart>
+                <BarItem>
+                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topplayers">
+                        TOP PLAYERS
+                    </BarLink>
+                </BarItem>
+                <BarItem>
+                    <BarLink TextColor="TextColor.Primary" TextWeight="TextWeight.Bold" To="/topgoalies">
+                        TOP GOALIES
+                    </BarLink>
+                </BarItem>
+            </BarStart>
+            <BarEnd>
+                <BarItem Margin="Margin.IsAuto" TextAlignment="TextAlignment.End">
+                    <BarLink To="https://github.com/bolst" Target="Target.Blank" Width="Width.Is75">
+                        <Image Source="Bolton.jpg" Width="Width.Is25" />
+                    </BarLink>
+                </BarItem>
+            </BarEnd>
+        </BarMenu>
+    </Bar>
+}
+
+@code {
+    private bool IsMobile { get; set; } = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+    }
+}

@@ -1,0 +1,32 @@
+@page "/topgoalies"
+@namespace RoadToSchmalz.Pages.Leaders
+@using RoadToSchmalz.Data.GoalieStats
+@using RoadToSchmalz.Components
+
+@if (GoalieData != null)
+{
+    <Row RowColumns="RowColumns.Are1">
+        <Column>
+            @foreach (GoalieStat ps in GoalieData)
+            {
+                GoalieStat playerStat = ps;
+                <Row Padding="Padding.Is2.OnY">
+                    <StatCard Type="Goalie" GoalieStats="@ps" />
+                </Row>
+            }
+        </Column>
+    </Row>
+}
+
+@code {
+
+    List<GoalieStat>? GoalieData { get; set; } = null;
+    protected override void OnInitialized()
+    {
+        GoalieData = RoadToSchmalz.Api.Goalies.Instance().GetStats();
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await RoadToSchmalz.Api.Players.Instance().FetchData();
+    }
+}

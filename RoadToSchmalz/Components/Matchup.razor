@@ -1,0 +1,89 @@
+@namespace RoadToSchmalz.Components
+@inject NavigationManager navManager
+@inject IJSRuntime JSRuntime
+
+<div @onclick="@(e => DisplayGameStats())" style="cursor: pointer">
+    <Card>
+        <CardBody>
+            <Row RowColumns="RowColumns.Are2">
+                @if (Data != null)
+                {
+
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Figure Size="@logoSize">
+                                @{
+                                    string team_name = Api.Teams.Instance().TeamIdNameMap[Data.team1];
+                                    string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
+                                    !Char.IsWhiteSpace(c)).ToArray());
+                                    string path = $"logos/{team_name_stripped}.png";
+                                    <FigureImage Source="@path" />
+                                }
+                            </Figure>
+                            <Text TextSize="TextSize.ExtraSmall">@Data.team1_wins</Text>
+                        </Div>
+                    </Column>
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Figure Size="@logoSize">
+                                @{
+                                    string team_name = Api.Teams.Instance().TeamIdNameMap[Data.team2];
+                                    string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
+                                    !Char.IsWhiteSpace(c)).ToArray());
+                                    string path = $"logos/{team_name_stripped}.png";
+                                    <FigureImage Source="@path" />
+                                }
+                            </Figure>
+                            <Text TextSize="TextSize.ExtraSmall">@Data.team2_wins</Text>
+                        </Div>
+                    </Column>
+                }
+                else
+                {
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Figure Size="@logoSize">
+                            </Figure>
+                            <Text TextSize="TextSize.ExtraSmall"></Text>
+                        </Div>
+                    </Column>
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Figure Size="@logoSize">
+                            </Figure>
+                            <Text TextSize="TextSize.ExtraSmall"></Text>
+                        </Div>
+                    </Column>
+                }
+            </Row>
+        </CardBody>
+    </Card>
+</div>
+
+@code {
+    [Parameter] public string Text { get; set; }
+    [Parameter] public Data.Matchup Data { get; set; }
+    private string Team1Name { get; set; }
+    private string Team2Name { get; set; }
+
+    private bool IsMobile { get; set; } = false;
+
+    private FigureSize logoSize = FigureSize.Is32x32;
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+
+        logoSize = IsMobile ? FigureSize.Is16x16 : FigureSize.Is32x32;
+
+        base.OnInitialized();
+    }
+
+    private void DisplayGameStats()
+    {
+        if (Data != null)
+        {
+            navManager.NavigateTo($"/series?sletter={Data.series_letter}");
+        }
+    }
+}

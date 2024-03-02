@@ -1,0 +1,131 @@
+﻿@page "/"
+@using RoadToSchmalz.Components
+@using RoadToSchmalz.Api
+@inject IJSRuntime JSRuntime
+
+@if (north_matchups != null
+&& south_matchups != null
+&& west_matchups != null
+&& east_matchups != null)
+{
+    <Row>
+        @{
+            const int MAX_ROUNDS = 6;
+            int currentRound = north_matchups.Count();
+            int zoomLevel = 0;
+
+            for (int r = zoomLevel; r < currentRound; r++)
+            {
+                int r0 = r;
+                <Column>
+                    <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                        @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
+                        {
+                            var _matchup = matchup;
+                            <Matchup Data="@_matchup" />
+                        }
+                        @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
+                        {
+                            var _matchup = matchup;
+                            <Matchup Data="@_matchup" />
+                        }
+                    </Div>
+                </Column>
+            }
+
+            @if (!IsMobile)
+            {
+                for (int r = currentRound; r < MAX_ROUNDS - 1; r++)
+                {
+                    int r0 = r;
+                    <Column>
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                            {
+                                <Matchup />
+                            }
+                        </Div>
+                    </Column>
+                }
+            }
+        }
+
+
+        <Column>
+            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                <Image Source="logos/playoffs.png" Width="Width.Is100" />
+            </Div>
+        </Column>
+
+        @{
+            if (!IsMobile)
+            {
+                for (int r = MAX_ROUNDS - 2; r >= currentRound; r--)
+                {
+                    int r0 = r;
+                    <Column>
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                            {
+                                <Matchup />
+                            }
+                        </Div>
+                    </Column>
+                }
+            }
+
+            for (int r = zoomLevel; r < currentRound; r++)
+            {
+                int r0 = r;
+                <Column>
+                    <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                        @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
+                        {
+                            var _matchup = matchup;
+                            <Matchup Data="@_matchup" />
+                        }
+                        @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
+                        {
+                            var _matchup = matchup;
+                            <Matchup Data="@_matchup" />
+                        }
+                    </Div>
+                </Column>
+            }
+        }
+    </Row>
+}
+
+@code {
+
+    private List<Data.Matchups>? north_matchups { get; set; } = null;
+    private List<Data.Matchups>? east_matchups { get; set; } = null;
+    private List<Data.Matchups>? west_matchups { get; set; } = null;
+    private List<Data.Matchups>? south_matchups { get; set; } = null;
+    private List<Data.Matchups>? matchups { get; set; } = null;
+
+    private bool IsMobile { get; set; } = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RoadToSchmalz.Api.Matchups.Instance().FetchData();
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+    }
+
+    protected override void OnInitialized()
+    {
+        north_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.CARRUTHERS);
+        north_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.POLLOCK)[0].matchups);
+
+        east_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.ORR);
+        east_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.TOD)[0].matchups);
+
+        west_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.Schmalz);
+        west_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.YECK)[0].matchups);
+
+        south_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);
+        south_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.DOHERTY)[0].matchups);
+
+        base.OnInitialized();
+    }
+}

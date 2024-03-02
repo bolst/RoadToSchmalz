@@ -1,0 +1,58 @@
+﻿<Blazorise.ThemeProvider Theme="@theme">
+    <Router AppAssembly="typeof(App).Assembly">
+        <Found Context="routeData">
+            <RouteView RouteData="routeData" DefaultLayout="typeof(RoadToSchmalz.Layouts.MainLayout)" />
+        </Found>
+        <NotFound>
+            <p>Sorry, there's nothing at this address.</p>
+        </NotFound>
+    </Router>
+    <MessageProvider />
+    <PageProgressProvider />
+</Blazorise.ThemeProvider>
+@code {
+    private Theme theme = new()
+        {
+            BarOptions = new()
+            {
+                HorizontalHeight = "72px"
+            },
+            ColorOptions = new()
+            {
+                Primary = "#ED1C25", // Red
+                Secondary = "#A7A9AC", // Grey
+                Success = "#0CCA4A", // Dark pastel green
+                Info = "#4567FF", // Neon blue
+                Warning = "#1D3354", // Delft blue
+                Danger = "#FF9F1C", // Orange peel
+                Light = "#e3e5e8", // White
+                Dark = "#1A1A1A", // Eerie black
+            },
+            BackgroundOptions = new()
+            {
+                Primary = "#ED1C25", // Red
+                Secondary = "#A7A9AC", // Grey
+                Success = "#0CCA4A", // Dark pastel green
+                Info = "#4567FF", // Neon blue
+                Warning = "#1D3354", // Delft blue
+                Danger = "#FF9F1C", // Orange peel
+                Light = "#e3e5e8", // White
+                Dark = "#1A1A1A", // Eerie black
+            },
+            InputOptions = new()
+            {
+                CheckColor = "#ED1C25",
+            },
+            TextColorOptions = new()
+            {
+                Primary = "#B20000",
+                Secondary = "#F0D952",
+                Success = "#00CC66",
+                Info = "#9FA4A9",
+                Warning = "#FF8C42",
+                Danger = "#B73535",
+                Light = "#F5F0F6",
+                Dark = "#211F20",
+            },
+        };
+}
