@@ -10,31 +10,36 @@
                 {
                     <Column TextAlignment="TextAlignment.Center">
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                            <Figure Size="@logoSize">
+                            <Div>
                                 @{
                                     string team_name = Api.Teams.Instance().TeamIdNameMap[Data.team1];
                                     string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
                                     !Char.IsWhiteSpace(c)).ToArray());
                                     string path = $"logos/{team_name_stripped}.png";
-                                    <FigureImage Source="@path" />
+                                    <Image Source="@path" Width="Width.Is100" />
                                 }
-                            </Figure>
+                            </Div>
+                            <Div>
+                                @RenderTeamWins(Data.team1_wins)
+                            </Div>
                         </Div>
-                        <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@Data.team1_wins</Text>
+
                     </Column>
                     <Column TextAlignment="TextAlignment.Center">
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                            <Figure Size="@logoSize">
+                            <Div>
                                 @{
                                     string team_name = Api.Teams.Instance().TeamIdNameMap[Data.team2];
                                     string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
                                     !Char.IsWhiteSpace(c)).ToArray());
                                     string path = $"logos/{team_name_stripped}.png";
-                                    <FigureImage Source="@path" />
+                                    <Image Source="@path" Width="Width.Is100" />
                                 }
-                            </Figure>
+                            </Div>
+                            <Div>
+                                @RenderTeamWins(Data.team2_wins)
+                            </Div>
                         </Div>
-                        <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@Data.team2_wins</Text>
                     </Column>
                 }
                 else
@@ -68,6 +73,14 @@
     private bool IsMobile { get; set; } = false;
 
     private FigureSize logoSize = FigureSize.Is32x32;
+
+    private RenderFragment RenderTeamWins(int wins)
+    {
+        TextColor color = (wins == 4) ? TextColor.Success : TextColor.Dark;
+        RenderFragment item = @<Paragraph TextSize="TextSize.Small" TextWeight="TextWeight.Bold" TextColor="@color">@wins
+    </Paragraph>;
+        return item;
+    }
 
     protected override async Task OnInitializedAsync()
     {

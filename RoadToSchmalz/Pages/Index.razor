@@ -9,15 +9,12 @@
 && west_matchups != null
 && east_matchups != null)
 {
-    <Row>
-    @{
-            int currentRound = north_matchups.Count();
-            int zoomLevel = RoundViewLevel;
-
-            for (int r = zoomLevel; r < MAX_ROUNDS - 1; r++)
+    <Row Position="Position.Relative.Top.Is50.Translate.MiddleY">
+        @{
+            for (int r = RoundViewLevel; r < TOTAL_PREFINAL_ROUNDS; r++)
             {
                 int r0 = r;
-                @if (r0 < currentRound)
+                @if (r0 < CurrentRound)
                 {
                     <Column>
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
@@ -40,7 +37,7 @@
                     {
                         <Column>
                             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                                @for (int i = 0; i < Math.Pow(2, TOTAL_PREFINAL_ROUNDS - r0 - 1); i++)
                                 {
                                     <Matchup />
                                 }
@@ -51,32 +48,35 @@
             }
         }
 
-        <Column>
+        <Column TextAlignment="TextAlignment.Center">
             @if (IsMobile)
             {
-
             }
             else
             {
                 <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />
             }
-
+@*
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
                 <Image Source="logos/playoffs.png" Width="Width.Is100" />
             </Div>
+*@
+            <Figure Size="@PjhlLogoSize" Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                <FigureImage Source="logos/playoffs.png" />
+            </Figure>
         </Column>
 
         @{
-            for (int r = zoomLevel; r < currentRound; r++)
+            for (int r = TOTAL_PREFINAL_ROUNDS - 1; r >= RoundViewLevel; r--)
             {
                 int r0 = r;
-                @if (r0 >= currentRound)
+                @if (r0 >= CurrentRound)
                 {
                     if (!IsMobile)
                     {
                         <Column>
                             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                                @for (int i = 0; i < Math.Pow(2, TOTAL_PREFINAL_ROUNDS - r0 - 1); i++)
                                 {
                                     <Matchup />
                                 }
@@ -108,9 +108,12 @@
 
 @code {
 
-    private const int MAX_ROUNDS = 6;
+    private const int TOTAL_PREFINAL_ROUNDS = 5;
 
     private int RoundViewLevel { get; set; } = 0;
+    private int CurrentRound {get; set;} = 0;
+
+    private FigureSize PjhlLogoSize = FigureSize.Is128x128;
 
     private List<Data.Matchups>? north_matchups { get; set; } = null;
     private List<Data.Matchups>? east_matchups { get; set; } = null;
@@ -131,14 +134,12 @@
             Console.WriteLine("Warning: JS Disconnect");
             IsMobile = false;
         }
-    }
 
-    protected override void OnInitialized()
-    {
+        // Reminder: the order of these matter
         SetMatchups();
+        SetCurrentRound();
         SetRoundView();
-
-        base.OnInitialized();
+        SetPjhlLogoSize();
     }
 
     private void SetMatchups()
@@ -161,12 +162,24 @@
     {
         Uri uri = new Uri(navManager.Uri);
         string? rvStr = System.Web.HttpUtility.ParseQueryString(uri.Query).Get("rv");
-        int roundViewLevel = 0;
+        int roundViewLevel = CurrentRound - 1;
         if (!string.IsNullOrEmpty(rvStr) && int.TryParse(rvStr, out roundViewLevel))
         {
-            roundViewLevel = Math.Min(roundViewLevel, MAX_ROUNDS);
+            // must be between 0 and 5
+            roundViewLevel = Math.Min(roundViewLevel, TOTAL_PREFINAL_ROUNDS);
             roundViewLevel = Math.Max(roundViewLevel, 0);
         }
         RoundViewLevel = roundViewLevel;
+    }
+
+    private void SetCurrentRound()
+    {
+        var rounds = new[]{north_matchups.Count(), east_matchups.Count(), west_matchups.Count(), south_matchups.Count()};
+        CurrentRound = rounds.Min();
+    }
+
+    private void SetPjhlLogoSize()
+    {
+        PjhlLogoSize = IsMobile ? FigureSize.Is96x96 : FigureSize.Is128x128;
     }
 }

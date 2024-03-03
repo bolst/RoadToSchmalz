@@ -2,18 +2,24 @@
 @using Microsoft.AspNetCore.Mvc
 @inject NavigationManager navManager
 
-<Row RowColumns="RowColumns.Are1">
-    <Column>
-        @foreach (Data.Game game in matchup.games)
-        {
-            var g = game;
-            <Row Padding="Padding.Is2.OnY">
-                <Game GameData="@g" />
-            </Row>
+@if (matchup != null)
+{
+    <Div TextAlignment="TextAlignment.Center">
+        <Heading>@matchup.series_name.ToUpper()</Heading>
+    </Div>
+    <Row RowColumns="RowColumns.Are1">
+        <Column>
+            @foreach (Data.Game game in matchup.games)
+            {
+                var g = game;
+                <Row Padding="Padding.Is2.OnY">
+                    <Game GameData="@g" />
+                </Row>
 
-        }
-    </Column>
-</Row>
+            }
+        </Column>
+    </Row>
+}
 
 @code {
     private Data.Matchup? matchup { get; set; } = null;
