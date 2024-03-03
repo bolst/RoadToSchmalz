@@ -10,46 +10,46 @@
 && east_matchups != null)
 {
     <Row>
-        @{
+    @{
             int currentRound = north_matchups.Count();
             int zoomLevel = RoundViewLevel;
 
-            for (int r = zoomLevel; r < currentRound; r++)
+            for (int r = zoomLevel; r < MAX_ROUNDS - 1; r++)
             {
                 int r0 = r;
-                <Column>
-                    <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                        @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
-                        {
-                            var _matchup = matchup;
-                            <Matchup Data="@_matchup" />
-                        }
-                        @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
-                        {
-                            var _matchup = matchup;
-                            <Matchup Data="@_matchup" />
-                        }
-                    </Div>
-                </Column>
-            }
-
-            @if (!IsMobile)
-            {
-                for (int r = currentRound; r < MAX_ROUNDS - 1; r++)
+                @if (r0 < currentRound)
                 {
-                    int r0 = r;
                     <Column>
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                            @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                            @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
                             {
-                                <Matchup />
+                                var _matchup = matchup;
+                                <Matchup Data="@_matchup" />
+                            }
+                            @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
+                            {
+                                var _matchup = matchup;
+                                <Matchup Data="@_matchup" />
                             }
                         </Div>
                     </Column>
                 }
+                else
+                {
+                    if (!IsMobile)
+                    {
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                                {
+                                    <Matchup />
+                                }
+                            </Div>
+                        </Column>
+                    }
+                }
             }
         }
-
 
         <Column>
             @if (IsMobile)
@@ -58,7 +58,7 @@
             }
             else
             {
-                <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel"/>
+                <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />
             }
 
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
@@ -67,39 +67,40 @@
         </Column>
 
         @{
-            if (!IsMobile)
+            for (int r = zoomLevel; r < currentRound; r++)
             {
-                for (int r = MAX_ROUNDS - 2; r >= currentRound; r--)
+                int r0 = r;
+                @if (r0 >= currentRound)
                 {
-                    int r0 = r;
+                    if (!IsMobile)
+                    {
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                                {
+                                    <Matchup />
+                                }
+                            </Div>
+                        </Column>
+                    }
+                }
+                else
+                {
                     <Column>
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                            @for (int i = 0; i < Math.Pow(2, MAX_ROUNDS - r0 - 2); i++)
+                            @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
                             {
-                                <Matchup />
+                                var _matchup = matchup;
+                                <Matchup Data="@_matchup" />
+                            }
+                            @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
+                            {
+                                var _matchup = matchup;
+                                <Matchup Data="@_matchup" />
                             }
                         </Div>
                     </Column>
                 }
-            }
-
-            for (int r = zoomLevel; r < currentRound; r++)
-            {
-                int r0 = r;
-                <Column>
-                    <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                        @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
-                        {
-                            var _matchup = matchup;
-                            <Matchup Data="@_matchup" />
-                        }
-                        @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
-                        {
-                            var _matchup = matchup;
-                            <Matchup Data="@_matchup" />
-                        }
-                    </Div>
-                </Column>
             }
         }
     </Row>
@@ -121,7 +122,15 @@
     protected override async Task OnInitializedAsync()
     {
         await RoadToSchmalz.Api.Matchups.Instance().FetchData();
-        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+        try
+        {
+            IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+        }
+        catch (JSDisconnectedException exc)
+        {
+            Console.WriteLine("Warning: JS Disconnect");
+            IsMobile = false;
+        }
     }
 
     protected override void OnInitialized()

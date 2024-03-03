@@ -4,50 +4,50 @@
 @if (IsMobile)
 {
     <Bar Background="Background.Light">
-        <BarBrand>
-            <BarItem>
-                <Row>
-                    <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
-                        @PjhlLogo
-                    </Column>
-                    <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
-                        @PageTitle
-                    </Column>
-                    <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
-                        @BoltonJersey
-                    </Column>
-                </Row>
-            </BarItem>
-        </BarBrand>
-        <BarMenu>
-            <BarStart>
-                @TopPlayersBarItem
-                @TopGoaliesBarItem
-            </BarStart>
-        </BarMenu>
-    </Bar>
+    <BarBrand>
+        <BarItem>
+            <Row>
+                <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
+                    @PjhlLogo
+                </Column>
+                <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
+                    @PageTitle
+                </Column>
+                <Column ColumnSize="ColumnSize.IsThird" TextAlignment="TextAlignment.Center">
+                    @BoltonJersey
+                </Column>
+            </Row>
+        </BarItem>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>
+            @TopPlayersBarItem
+            @TopGoaliesBarItem
+        </BarStart>
+    </BarMenu>
+</Bar>
 }
 else @* if computer or tablet *@
 {
     <Bar Visible=false Breakpoint="Breakpoint.Desktop" Background="Background.Light">
-        <BarBrand>
-            <BarItem Margin="Margin.IsAuto">
-                @PjhlLogo
+    <BarBrand>
+        <BarItem Margin="Margin.IsAuto">
+            @PjhlLogo
+        </BarItem>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>
+            @PageTitle
+            @TopPlayersBarItem
+            @TopGoaliesBarItem
+        </BarStart>
+        <BarEnd>
+            <BarItem Margin="Margin.IsAuto" TextAlignment="TextAlignment.End">
+                @BoltonJersey
             </BarItem>
-        </BarBrand>
-        <BarMenu>
-            <BarStart>
-                @PageTitle
-                @TopPlayersBarItem
-                @TopGoaliesBarItem
-            </BarStart>
-            <BarEnd>
-                <BarItem Margin="Margin.IsAuto" TextAlignment="TextAlignment.End">
-                    @BoltonJersey
-                </BarItem>
-            </BarEnd>
-        </BarMenu>
-    </Bar>
+        </BarEnd>
+    </BarMenu>
+</Bar>
 }
 
 @code {
@@ -98,7 +98,7 @@ else @* if computer or tablet *@
 
             BoltonJersey = @<BarLink To="@GitUrl" Target="Target.Blank" Width="Width.Is100"
         Position="Position.Relative.Top.Is50.Translate.MiddleY">
-        <Image Source="Bolton.jpg" Width="Width.Is75" />
+        <Image Source="Bolton.jpg" Width="Width.Is75" Style="border-radius: 3px" />
     </BarLink>;
         }
     }
