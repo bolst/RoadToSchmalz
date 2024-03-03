@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cia9B1x85hPVK0CmEAkvxkoTsMiAP4J9aOyfAccJo7Y=",
+  "Hash": "24Ja5DXlZfUltzSWaZIFvmTMRqS4p6mPlmIjIkIU5AA=",
   "Source": "RoadToSchmalz",
   "BasePath": "_content/RoadToSchmalz",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "RoadToSchmalz\\wwwroot",
+      "Name": "RoadToSchmalz/wwwroot",
       "Source": "RoadToSchmalz",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\blazorise.bootstrap5.css",
+      "Identity": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/blazorise.bootstrap5.css",
       "SourceId": "Blazorise.Bootstrap5",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise.Bootstrap5",
       "RelativePath": "blazorise.bootstrap5.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\blazorise.bootstrap5.css"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/blazorise.bootstrap5.css"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\blazorise.bootstrap5.min.css",
+      "Identity": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/blazorise.bootstrap5.min.css",
       "SourceId": "Blazorise.Bootstrap5",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise.Bootstrap5",
       "RelativePath": "blazorise.bootstrap5.min.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\blazorise.bootstrap5.min.css"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/blazorise.bootstrap5.min.css"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\modal.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/modal.js",
       "SourceId": "Blazorise.Bootstrap5",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise.Bootstrap5",
       "RelativePath": "modal.js",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\modal.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/modal.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\tooltip.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/tooltip.js",
       "SourceId": "Blazorise.Bootstrap5",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise.Bootstrap5",
       "RelativePath": "tooltip.js",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise.bootstrap5\\1.3.4\\staticwebassets\\tooltip.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise.bootstrap5/1.3.4/staticwebassets/tooltip.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\blazorise.css",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/blazorise.css",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "blazorise.css",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\blazorise.css"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/blazorise.css"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\blazorise.min.css",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/blazorise.min.css",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "blazorise.min.css",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\blazorise.min.css"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/blazorise.min.css"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\breakpoint.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/breakpoint.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "breakpoint.js",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\breakpoint.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/breakpoint.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\button.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/button.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "button.js",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\button.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/button.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\closable.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/closable.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "closable.js",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\closable.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/closable.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\colorPicker.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/colorPicker.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "colorPicker.js",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\colorPicker.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/colorPicker.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\datePicker.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/datePicker.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "datePicker.js",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\datePicker.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/datePicker.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\dragDrop.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/dragDrop.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "dragDrop.js",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\dragDrop.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/dragDrop.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\dropdown.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/dropdown.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "dropdown.js",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\dropdown.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/dropdown.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\fileEdit.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/fileEdit.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "fileEdit.js",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\fileEdit.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/fileEdit.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\filePicker.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/filePicker.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "filePicker.js",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\filePicker.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/filePicker.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\floatingUi.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/floatingUi.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "floatingUi.js",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\floatingUi.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/floatingUi.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\inputMask.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/inputMask.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "inputMask.js",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\inputMask.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/inputMask.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\io.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/io.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "io.js",
       "AssetKind": "All",
@@ -356,13 +356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\io.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/io.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\memoEdit.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/memoEdit.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "memoEdit.js",
       "AssetKind": "All",
@@ -375,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\memoEdit.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/memoEdit.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\numericPicker.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/numericPicker.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "numericPicker.js",
       "AssetKind": "All",
@@ -394,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\numericPicker.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/numericPicker.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\observer.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/observer.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "observer.js",
       "AssetKind": "All",
@@ -413,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\observer.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/observer.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\table.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/table.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "table.js",
       "AssetKind": "All",
@@ -432,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\table.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/table.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\textEdit.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/textEdit.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "textEdit.js",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\textEdit.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/textEdit.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\theme.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/theme.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "theme.js",
       "AssetKind": "All",
@@ -470,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\theme.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/theme.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\timePicker.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/timePicker.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "timePicker.js",
       "AssetKind": "All",
@@ -489,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\timePicker.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/timePicker.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\tooltip.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/tooltip.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "tooltip.js",
       "AssetKind": "All",
@@ -508,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\tooltip.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/tooltip.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\utilities.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/utilities.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "utilities.js",
       "AssetKind": "All",
@@ -527,13 +527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\utilities.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/utilities.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\DateTimeMaskValidator.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/DateTimeMaskValidator.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "validators/DateTimeMaskValidator.js",
       "AssetKind": "All",
@@ -546,13 +546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\DateTimeMaskValidator.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/DateTimeMaskValidator.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\NoValidator.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/NoValidator.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "validators/NoValidator.js",
       "AssetKind": "All",
@@ -565,13 +565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\NoValidator.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/NoValidator.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\NumericMaskValidator.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/NumericMaskValidator.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "validators/NumericMaskValidator.js",
       "AssetKind": "All",
@@ -584,13 +584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\NumericMaskValidator.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/NumericMaskValidator.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\RegExMaskValidator.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/RegExMaskValidator.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "validators/RegExMaskValidator.js",
       "AssetKind": "All",
@@ -603,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\validators\\RegExMaskValidator.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/validators/RegExMaskValidator.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\autoNumeric.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/autoNumeric.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/autoNumeric.js",
       "AssetKind": "All",
@@ -622,13 +622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\autoNumeric.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/autoNumeric.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\Behave.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/Behave.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/Behave.js",
       "AssetKind": "All",
@@ -641,13 +641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\Behave.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/Behave.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\flatpickr.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/flatpickr.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/flatpickr.js",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\flatpickr.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/flatpickr.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui-core.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/floating-ui-core.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/floating-ui-core.js",
       "AssetKind": "All",
@@ -679,13 +679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui-core.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/floating-ui-core.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/floating-ui.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/floating-ui.js",
       "AssetKind": "All",
@@ -698,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/floating-ui.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\inputmask.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/inputmask.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/inputmask.js",
       "AssetKind": "All",
@@ -717,13 +717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\inputmask.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/inputmask.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\jsencrypt.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/jsencrypt.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/jsencrypt.js",
       "AssetKind": "All",
@@ -736,13 +736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\jsencrypt.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/jsencrypt.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\Pickr.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/Pickr.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/Pickr.js",
       "AssetKind": "All",
@@ -755,13 +755,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\Pickr.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/Pickr.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\sha512.js",
+      "Identity": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/sha512.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "ContentRoot": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/",
       "BasePath": "_content/Blazorise",
       "RelativePath": "vendors/sha512.js",
       "AssetKind": "All",
@@ -774,13 +774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\sha512.js"
+      "OriginalItemSpec": "/Users/nic/.nuget/packages/blazorise/1.3.4/staticwebassets/vendors/sha512.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\bolton.jpg",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/bolton.jpg",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "bolton.jpg",
       "AssetKind": "All",
@@ -793,13 +793,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bolton.jpg"
+      "OriginalItemSpec": "wwwroot/bolton.jpg"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\brand-logo.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/brand-logo.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "brand-logo.png",
       "AssetKind": "All",
@@ -812,13 +812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\brand-logo.png"
+      "OriginalItemSpec": "wwwroot/brand-logo.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\css\\blazor-ui.css",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/css/blazor-ui.css",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "css/blazor-ui.css",
       "AssetKind": "All",
@@ -831,13 +831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\blazor-ui.css"
+      "OriginalItemSpec": "wwwroot/css/blazor-ui.css"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\favicon.ico",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/favicon.ico",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -850,13 +850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\headshot-default.jpg",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/headshot-default.jpg",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "headshot-default.jpg",
       "AssetKind": "All",
@@ -869,13 +869,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\headshot-default.jpg"
+      "OriginalItemSpec": "wwwroot/headshot-default.jpg"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AllistonHornets.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AllistonHornets.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/AllistonHornets.png",
       "AssetKind": "All",
@@ -888,13 +888,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\AllistonHornets.png"
+      "OriginalItemSpec": "wwwroot/logos/AllistonHornets.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AmherstburgAdmirals.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AmherstburgAdmirals.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/AmherstburgAdmirals.png",
       "AssetKind": "All",
@@ -907,13 +907,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\AmherstburgAdmirals.png"
+      "OriginalItemSpec": "wwwroot/logos/AmherstburgAdmirals.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AmherstviewJets.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AmherstviewJets.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/AmherstviewJets.png",
       "AssetKind": "All",
@@ -926,13 +926,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\AmherstviewJets.png"
+      "OriginalItemSpec": "wwwroot/logos/AmherstviewJets.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AylmerSpitfires.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AylmerSpitfires.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/AylmerSpitfires.png",
       "AssetKind": "All",
@@ -945,13 +945,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\AylmerSpitfires.png"
+      "OriginalItemSpec": "wwwroot/logos/AylmerSpitfires.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\BlenheimBlades.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/BlenheimBlades.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/BlenheimBlades.png",
       "AssetKind": "All",
@@ -964,13 +964,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\BlenheimBlades.png"
+      "OriginalItemSpec": "wwwroot/logos/BlenheimBlades.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\CaledonGoldenHawks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/CaledonGoldenHawks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/CaledonGoldenHawks.png",
       "AssetKind": "All",
@@ -983,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\CaledonGoldenHawks.png"
+      "OriginalItemSpec": "wwwroot/logos/CaledonGoldenHawks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\CampbellfordRebels.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/CampbellfordRebels.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/CampbellfordRebels.png",
       "AssetKind": "All",
@@ -1002,13 +1002,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\CampbellfordRebels.png"
+      "OriginalItemSpec": "wwwroot/logos/CampbellfordRebels.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ClaringtonEagles.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ClaringtonEagles.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/ClaringtonEagles.png",
       "AssetKind": "All",
@@ -1021,13 +1021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\ClaringtonEagles.png"
+      "OriginalItemSpec": "wwwroot/logos/ClaringtonEagles.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DorchesterDolphins.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DorchesterDolphins.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/DorchesterDolphins.png",
       "AssetKind": "All",
@@ -1040,13 +1040,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\DorchesterDolphins.png"
+      "OriginalItemSpec": "wwwroot/logos/DorchesterDolphins.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DresdenKings.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DresdenKings.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/DresdenKings.png",
       "AssetKind": "All",
@@ -1059,13 +1059,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\DresdenKings.png"
+      "OriginalItemSpec": "wwwroot/logos/DresdenKings.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DundasBlues.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DundasBlues.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/DundasBlues.png",
       "AssetKind": "All",
@@ -1078,13 +1078,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\DundasBlues.png"
+      "OriginalItemSpec": "wwwroot/logos/DundasBlues.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DunnvilleMudcats.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DunnvilleMudcats.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/DunnvilleMudcats.png",
       "AssetKind": "All",
@@ -1097,13 +1097,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\DunnvilleMudcats.png"
+      "OriginalItemSpec": "wwwroot/logos/DunnvilleMudcats.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\Essex73s.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/Essex73s.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/Essex73s.png",
       "AssetKind": "All",
@@ -1116,13 +1116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\Essex73s.png"
+      "OriginalItemSpec": "wwwroot/logos/Essex73s.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ExeterHawks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ExeterHawks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/ExeterHawks.png",
       "AssetKind": "All",
@@ -1135,13 +1135,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\ExeterHawks.png"
+      "OriginalItemSpec": "wwwroot/logos/ExeterHawks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\FergusWhalers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/FergusWhalers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/FergusWhalers.png",
       "AssetKind": "All",
@@ -1154,13 +1154,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\FergusWhalers.png"
+      "OriginalItemSpec": "wwwroot/logos/FergusWhalers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\FrankfordHuskies.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/FrankfordHuskies.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/FrankfordHuskies.png",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\FrankfordHuskies.png"
+      "OriginalItemSpec": "wwwroot/logos/FrankfordHuskies.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GeorginaIce.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GeorginaIce.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/GeorginaIce.png",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\GeorginaIce.png"
+      "OriginalItemSpec": "wwwroot/logos/GeorginaIce.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GlanbrookRangers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GlanbrookRangers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/GlanbrookRangers.png",
       "AssetKind": "All",
@@ -1211,13 +1211,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\GlanbrookRangers.png"
+      "OriginalItemSpec": "wwwroot/logos/GlanbrookRangers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GoderichFlyers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GoderichFlyers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/GoderichFlyers.png",
       "AssetKind": "All",
@@ -1230,13 +1230,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\GoderichFlyers.png"
+      "OriginalItemSpec": "wwwroot/logos/GoderichFlyers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GrimsbyPeachKings.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GrimsbyPeachKings.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/GrimsbyPeachKings.png",
       "AssetKind": "All",
@@ -1249,13 +1249,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\GrimsbyPeachKings.png"
+      "OriginalItemSpec": "wwwroot/logos/GrimsbyPeachKings.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HagersvilleHawks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HagersvilleHawks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/HagersvilleHawks.png",
       "AssetKind": "All",
@@ -1268,13 +1268,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\HagersvilleHawks.png"
+      "OriginalItemSpec": "wwwroot/logos/HagersvilleHawks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HanoverBarons.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HanoverBarons.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/HanoverBarons.png",
       "AssetKind": "All",
@@ -1287,13 +1287,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\HanoverBarons.png"
+      "OriginalItemSpec": "wwwroot/logos/HanoverBarons.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HespelerShamrocks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HespelerShamrocks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/HespelerShamrocks.png",
       "AssetKind": "All",
@@ -1306,13 +1306,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\HespelerShamrocks.png"
+      "OriginalItemSpec": "wwwroot/logos/HespelerShamrocks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HuntsvilleOtters.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HuntsvilleOtters.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/HuntsvilleOtters.png",
       "AssetKind": "All",
@@ -1325,13 +1325,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\HuntsvilleOtters.png"
+      "OriginalItemSpec": "wwwroot/logos/HuntsvilleOtters.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\InnisfilSpartans.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/InnisfilSpartans.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/InnisfilSpartans.png",
       "AssetKind": "All",
@@ -1344,13 +1344,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\InnisfilSpartans.png"
+      "OriginalItemSpec": "wwwroot/logos/InnisfilSpartans.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\KincardineBulldogs.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/KincardineBulldogs.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/KincardineBulldogs.png",
       "AssetKind": "All",
@@ -1363,13 +1363,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\KincardineBulldogs.png"
+      "OriginalItemSpec": "wwwroot/logos/KincardineBulldogs.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LakefieldChiefs.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LakefieldChiefs.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/LakefieldChiefs.png",
       "AssetKind": "All",
@@ -1382,13 +1382,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\LakefieldChiefs.png"
+      "OriginalItemSpec": "wwwroot/logos/LakefieldChiefs.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LakeshoreCanadiens.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LakeshoreCanadiens.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/LakeshoreCanadiens.png",
       "AssetKind": "All",
@@ -1401,13 +1401,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\LakeshoreCanadiens.png"
+      "OriginalItemSpec": "wwwroot/logos/LakeshoreCanadiens.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LittleBritainMerchants.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LittleBritainMerchants.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/LittleBritainMerchants.png",
       "AssetKind": "All",
@@ -1420,13 +1420,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\LittleBritainMerchants.png"
+      "OriginalItemSpec": "wwwroot/logos/LittleBritainMerchants.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LucanIrish.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LucanIrish.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/LucanIrish.png",
       "AssetKind": "All",
@@ -1439,13 +1439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\LucanIrish.png"
+      "OriginalItemSpec": "wwwroot/logos/LucanIrish.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MidlandFlyers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MidlandFlyers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/MidlandFlyers.png",
       "AssetKind": "All",
@@ -1458,13 +1458,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\MidlandFlyers.png"
+      "OriginalItemSpec": "wwwroot/logos/MidlandFlyers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MitchellHawks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MitchellHawks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/MitchellHawks.png",
       "AssetKind": "All",
@@ -1477,13 +1477,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\MitchellHawks.png"
+      "OriginalItemSpec": "wwwroot/logos/MitchellHawks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MooretownFlags.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MooretownFlags.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/MooretownFlags.png",
       "AssetKind": "All",
@@ -1496,13 +1496,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\MooretownFlags.png"
+      "OriginalItemSpec": "wwwroot/logos/MooretownFlags.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MountForestPatriots.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MountForestPatriots.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/MountForestPatriots.png",
       "AssetKind": "All",
@@ -1515,13 +1515,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\MountForestPatriots.png"
+      "OriginalItemSpec": "wwwroot/logos/MountForestPatriots.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\Mt.BrydgesBulldogs.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/Mt.BrydgesBulldogs.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/Mt.BrydgesBulldogs.png",
       "AssetKind": "All",
@@ -1534,13 +1534,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\Mt.BrydgesBulldogs.png"
+      "OriginalItemSpec": "wwwroot/logos/Mt.BrydgesBulldogs.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NapaneeRaiders.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NapaneeRaiders.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/NapaneeRaiders.png",
       "AssetKind": "All",
@@ -1553,13 +1553,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\NapaneeRaiders.png"
+      "OriginalItemSpec": "wwwroot/logos/NapaneeRaiders.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NewHamburgFirebirds.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NewHamburgFirebirds.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/NewHamburgFirebirds.png",
       "AssetKind": "All",
@@ -1572,13 +1572,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\NewHamburgFirebirds.png"
+      "OriginalItemSpec": "wwwroot/logos/NewHamburgFirebirds.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NiagaraRiverHawks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NiagaraRiverHawks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/NiagaraRiverHawks.png",
       "AssetKind": "All",
@@ -1591,13 +1591,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\NiagaraRiverHawks.png"
+      "OriginalItemSpec": "wwwroot/logos/NiagaraRiverHawks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NorthKawarthaKnights.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NorthKawarthaKnights.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/NorthKawarthaKnights.png",
       "AssetKind": "All",
@@ -1610,13 +1610,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\NorthKawarthaKnights.png"
+      "OriginalItemSpec": "wwwroot/logos/NorthKawarthaKnights.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NorthMiddlesexStars.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NorthMiddlesexStars.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/NorthMiddlesexStars.png",
       "AssetKind": "All",
@@ -1629,13 +1629,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\NorthMiddlesexStars.png"
+      "OriginalItemSpec": "wwwroot/logos/NorthMiddlesexStars.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NorwichMerchants.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NorwichMerchants.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/NorwichMerchants.png",
       "AssetKind": "All",
@@ -1648,13 +1648,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\NorwichMerchants.png"
+      "OriginalItemSpec": "wwwroot/logos/NorwichMerchants.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\OrilliaTerriers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/OrilliaTerriers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/OrilliaTerriers.png",
       "AssetKind": "All",
@@ -1667,13 +1667,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\OrilliaTerriers.png"
+      "OriginalItemSpec": "wwwroot/logos/OrilliaTerriers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ParisTitans.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ParisTitans.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/ParisTitans.png",
       "AssetKind": "All",
@@ -1686,13 +1686,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\ParisTitans.png"
+      "OriginalItemSpec": "wwwroot/logos/ParisTitans.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PenetangKings.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PenetangKings.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PenetangKings.png",
       "AssetKind": "All",
@@ -1705,13 +1705,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PenetangKings.png"
+      "OriginalItemSpec": "wwwroot/logos/PenetangKings.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PetroliaFlyers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PetroliaFlyers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PetroliaFlyers.png",
       "AssetKind": "All",
@@ -1724,13 +1724,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PetroliaFlyers.png"
+      "OriginalItemSpec": "wwwroot/logos/PetroliaFlyers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PictonPirates.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PictonPirates.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PictonPirates.png",
       "AssetKind": "All",
@@ -1743,13 +1743,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PictonPirates.png"
+      "OriginalItemSpec": "wwwroot/logos/PictonPirates.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\pjhl.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/pjhl.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/pjhl.png",
       "AssetKind": "All",
@@ -1762,13 +1762,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\pjhl.png"
+      "OriginalItemSpec": "wwwroot/logos/pjhl.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\playoffs.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/playoffs.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/playoffs.png",
       "AssetKind": "All",
@@ -1781,13 +1781,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\playoffs.png"
+      "OriginalItemSpec": "wwwroot/logos/playoffs.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortDoverSailors.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortDoverSailors.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PortDoverSailors.png",
       "AssetKind": "All",
@@ -1800,13 +1800,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PortDoverSailors.png"
+      "OriginalItemSpec": "wwwroot/logos/PortDoverSailors.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortHopePanthers.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortHopePanthers.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PortHopePanthers.png",
       "AssetKind": "All",
@@ -1819,13 +1819,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PortHopePanthers.png"
+      "OriginalItemSpec": "wwwroot/logos/PortHopePanthers.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortPerryLumberjacks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortPerryLumberjacks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PortPerryLumberjacks.png",
       "AssetKind": "All",
@@ -1838,13 +1838,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PortPerryLumberjacks.png"
+      "OriginalItemSpec": "wwwroot/logos/PortPerryLumberjacks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortStanleySailors.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortStanleySailors.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/PortStanleySailors.png",
       "AssetKind": "All",
@@ -1857,13 +1857,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\PortStanleySailors.png"
+      "OriginalItemSpec": "wwwroot/logos/PortStanleySailors.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\SchombergCougars.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/SchombergCougars.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/SchombergCougars.png",
       "AssetKind": "All",
@@ -1876,13 +1876,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\SchombergCougars.png"
+      "OriginalItemSpec": "wwwroot/logos/SchombergCougars.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\StaynerSiskins.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/StaynerSiskins.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/StaynerSiskins.png",
       "AssetKind": "All",
@@ -1895,13 +1895,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\StaynerSiskins.png"
+      "OriginalItemSpec": "wwwroot/logos/StaynerSiskins.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\TavistockBraves.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/TavistockBraves.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/TavistockBraves.png",
       "AssetKind": "All",
@@ -1914,13 +1914,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\TavistockBraves.png"
+      "OriginalItemSpec": "wwwroot/logos/TavistockBraves.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ThamesfordTrojans.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ThamesfordTrojans.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/ThamesfordTrojans.png",
       "AssetKind": "All",
@@ -1933,13 +1933,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\ThamesfordTrojans.png"
+      "OriginalItemSpec": "wwwroot/logos/ThamesfordTrojans.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\UxbridgeBruins.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/UxbridgeBruins.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/UxbridgeBruins.png",
       "AssetKind": "All",
@@ -1952,13 +1952,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\UxbridgeBruins.png"
+      "OriginalItemSpec": "wwwroot/logos/UxbridgeBruins.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WalkertonCapitals.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WalkertonCapitals.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/WalkertonCapitals.png",
       "AssetKind": "All",
@@ -1971,13 +1971,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\WalkertonCapitals.png"
+      "OriginalItemSpec": "wwwroot/logos/WalkertonCapitals.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WalpoleIslandWild.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WalpoleIslandWild.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/WalpoleIslandWild.png",
       "AssetKind": "All",
@@ -1990,13 +1990,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\WalpoleIslandWild.png"
+      "OriginalItemSpec": "wwwroot/logos/WalpoleIslandWild.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WellesleyApplejacks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WellesleyApplejacks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/WellesleyApplejacks.png",
       "AssetKind": "All",
@@ -2009,13 +2009,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\WellesleyApplejacks.png"
+      "OriginalItemSpec": "wwwroot/logos/WellesleyApplejacks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WheatleyOmsteadSharks.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WheatleyOmsteadSharks.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/WheatleyOmsteadSharks.png",
       "AssetKind": "All",
@@ -2028,13 +2028,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\WheatleyOmsteadSharks.png"
+      "OriginalItemSpec": "wwwroot/logos/WheatleyOmsteadSharks.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WinghamIronmen.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WinghamIronmen.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/WinghamIronmen.png",
       "AssetKind": "All",
@@ -2047,13 +2047,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\WinghamIronmen.png"
+      "OriginalItemSpec": "wwwroot/logos/WinghamIronmen.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WoodstockNavyVets.png",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WoodstockNavyVets.png",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "logos/WoodstockNavyVets.png",
       "AssetKind": "All",
@@ -2066,13 +2066,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\logos\\WoodstockNavyVets.png"
+      "OriginalItemSpec": "wwwroot/logos/WoodstockNavyVets.png"
     },
     {
-      "Identity": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\script.js",
+      "Identity": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/script.js",
       "SourceId": "RoadToSchmalz",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\",
+      "ContentRoot": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/",
       "BasePath": "_content/RoadToSchmalz",
       "RelativePath": "script.js",
       "AssetKind": "All",
@@ -2085,7 +2085,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\script.js"
+      "OriginalItemSpec": "wwwroot/script.js"
     }
   ]
 }

@@ -4,6 +4,12 @@
 @inject IJSRuntime JSRuntime
 @inject NavigationManager navManager
 
+<Div TextAlignment="TextAlignment.Center">
+    @if (!IsMobile)
+    {
+        <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />
+    }
+</Div>
 @if (north_matchups != null
 && south_matchups != null
 && west_matchups != null
@@ -49,13 +55,6 @@
         }
 
         <Column TextAlignment="TextAlignment.Center">
-            @if (IsMobile)
-            {
-            }
-            else
-            {
-                <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />
-            }
 @*
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
                 <Image Source="logos/playoffs.png" Width="Width.Is100" />
