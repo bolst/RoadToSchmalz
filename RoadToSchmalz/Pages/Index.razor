@@ -12,7 +12,7 @@
         @{
             const int MAX_ROUNDS = 6;
             int currentRound = north_matchups.Count();
-            int zoomLevel = 0;
+            int zoomLevel = RoundViewLevel;
 
             for (int r = zoomLevel; r < currentRound; r++)
             {
@@ -52,6 +52,15 @@
 
 
         <Column>
+            @if (IsMobile)
+            {
+
+            }
+            else
+            {
+                @*<RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />*@
+            }
+
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
                 <Image Source="logos/playoffs.png" Width="Width.Is100" />
             </Div>
@@ -97,6 +106,8 @@
 }
 
 @code {
+
+    private int RoundViewLevel { get; set; } = 0;
 
     private List<Data.Matchups>? north_matchups { get; set; } = null;
     private List<Data.Matchups>? east_matchups { get; set; } = null;

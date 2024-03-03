@@ -13,11 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Megabit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright 2018-2023 Megabit")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("\n\t\t\tThis is a Blazorise Template for a Blazor Server Application.\n\t\t\tBlazorise is" +
-    " a component library built on top of Blazor and CSS frameworks like Bootstrap, T" +
-    "ailwind, Bulma and Material.\n\t\t")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("\r\n\t\t\tThis is a Blazorise Template for a Blazor Server Application.\r\n\t\t\tBlazorise " +
+    "is a component library built on top of Blazor and CSS frameworks like Bootstrap," +
+    " Tailwind, Bulma and Material.\r\n\t\t")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.3.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3+93ce40a3a4f5d5f8b97f525e440ac337685f56a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.3+da616b44ec145e251ded01675c521288e00720ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoadToSchmalz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoadToSchmalz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.3.0.0")]

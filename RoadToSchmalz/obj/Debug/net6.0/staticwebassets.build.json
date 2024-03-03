@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cia9B1x85hPVK0CmEAkvxkoTsMiAP4J9aOyfAccJo7Y=",
+  "Hash": "dHOlrmslj5+qttFVLRo5PLyusP+w+ZUhvGXMNYJ2SIU=",
   "Source": "RoadToSchmalz",
   "BasePath": "_content/RoadToSchmalz",
   "Mode": "Default",
@@ -663,25 +663,6 @@
       "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\flatpickr.js"
     },
     {
-      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui-core.js",
-      "SourceId": "Blazorise",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
-      "BasePath": "_content/Blazorise",
-      "RelativePath": "vendors/floating-ui-core.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui-core.js"
-    },
-    {
       "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui.js",
       "SourceId": "Blazorise",
       "SourceType": "Package",
@@ -699,6 +680,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui.js"
+    },
+    {
+      "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui-core.js",
+      "SourceId": "Blazorise",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\",
+      "BasePath": "_content/Blazorise",
+      "RelativePath": "vendors/floating-ui-core.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\floating-ui-core.js"
     },
     {
       "Identity": "C:\\Users\\Nic\\.nuget\\packages\\blazorise\\1.3.4\\staticwebassets\\vendors\\inputmask.js",

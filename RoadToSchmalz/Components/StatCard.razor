@@ -5,7 +5,7 @@
 <Row Width="@RowWidth" Margin="Margin.IsAuto">
     @if (Stats != null || GoalieStats != null)
     {
-        <div @onclick="@(e => NavToPlayerProfile(Stats.row.player_id))" style="cursor: pointer">
+        <div @onclick="@(e => NavToPlayerProfile())" style="cursor: pointer">
             <Card Shadow="Shadow.Default">
                 <CardBody TextAlignment="TextAlignment.Center">
                     <Row RowColumns="@RowCols">
@@ -77,8 +77,12 @@
 
     }
 
-    private void NavToPlayerProfile(string player_id)
+    private void NavToPlayerProfile()
     {
+        string player_id = "";
+        if (Stats != null) player_id = Stats.row.player_id;
+        else if (GoalieStats != null) player_id = GoalieStats.row.player_id;
+
         navManager.NavigateTo($"https://www.thepjhl.ca/stats/player/{player_id}");
     }
 

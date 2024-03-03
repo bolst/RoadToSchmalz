@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXRjaHVwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/RoundDepthPicker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3VuZERlcHRoUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/StatCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdGF0Q2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
