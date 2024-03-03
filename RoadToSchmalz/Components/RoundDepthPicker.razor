@@ -1,4 +1,5 @@
 ﻿@namespace RoadToSchmalz.Components
+@inject NavigationManager navManager
 
 <Dropdown>
     <DropdownToggle Color="Color.Dark" TextWeight="TextWeight.Bold" Outline>
@@ -39,5 +40,6 @@
     private void SetRoundViewLevel(int zoomLevel)
     {
         RoundViewLevel = zoomLevel;
+        navManager.NavigateTo($"/?rv={RoundViewLevel}", true);
     }
 }

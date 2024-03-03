@@ -2,6 +2,7 @@
 @using RoadToSchmalz.Components
 @using RoadToSchmalz.Api
 @inject IJSRuntime JSRuntime
+@inject NavigationManager navManager
 
 @if (north_matchups != null
 && south_matchups != null
@@ -10,7 +11,6 @@
 {
     <Row>
         @{
-            const int MAX_ROUNDS = 6;
             int currentRound = north_matchups.Count();
             int zoomLevel = RoundViewLevel;
 
@@ -58,7 +58,7 @@
             }
             else
             {
-                @*<RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />*@
+                <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel"/>
             }
 
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
@@ -107,6 +107,8 @@
 
 @code {
 
+    private const int MAX_ROUNDS = 6;
+
     private int RoundViewLevel { get; set; } = 0;
 
     private List<Data.Matchups>? north_matchups { get; set; } = null;
@@ -124,18 +126,38 @@
 
     protected override void OnInitialized()
     {
-        north_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.CARRUTHERS);
-        north_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.POLLOCK)[0].matchups);
-
-        east_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.ORR);
-        east_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.TOD)[0].matchups);
-
-        west_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.STOBBS);
-        west_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.YECK)[0].matchups);
-
-        south_matchups = Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);
-        south_matchups[0].matchups.AddRange(Matchups.Instance().GetMatchups(Data.Divisions.DIVISION.DOHERTY)[0].matchups);
+        SetMatchups();
+        SetRoundView();
 
         base.OnInitialized();
+    }
+
+    private void SetMatchups()
+    {
+        var Inst = Matchups.Instance();
+        north_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.CARRUTHERS);
+        north_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.POLLOCK)[0].matchups);
+
+        east_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.ORR);
+        east_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.TOD)[0].matchups);
+
+        west_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.STOBBS);
+        west_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.YECK)[0].matchups);
+
+        south_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);
+        south_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.DOHERTY)[0].matchups);
+    }
+
+    private void SetRoundView()
+    {
+        Uri uri = new Uri(navManager.Uri);
+        string? rvStr = System.Web.HttpUtility.ParseQueryString(uri.Query).Get("rv");
+        int roundViewLevel = 0;
+        if (!string.IsNullOrEmpty(rvStr) && int.TryParse(rvStr, out roundViewLevel))
+        {
+            roundViewLevel = Math.Min(roundViewLevel, MAX_ROUNDS);
+            roundViewLevel = Math.Max(roundViewLevel, 0);
+        }
+        RoundViewLevel = roundViewLevel;
     }
 }
