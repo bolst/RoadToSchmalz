@@ -60,6 +60,12 @@
                     </Column>
                 }
             </Row>
+            @if (IsLive)
+            {
+                <Div Style="position:absolute; z-index:1; top:0px; left:3px;">
+                    <Icon Name="IconName.Circle" IconSize="IconSize.ExtraSmall" Style="color: #FF0000" />
+                </Div>
+            }
         </CardBody>
     </Card>
 </div>
@@ -67,11 +73,13 @@
 @code {
     [Parameter] public string Text { get; set; }
     [Parameter] public Data.Matchup Data { get; set; }
-    private string Team1Name { get; set; }
-    private string Team2Name { get; set; }
+    private string Team1Name;
+    private string Team2Name;
 
-    private bool IsMobile { get; set; } = false;
-    private bool IsTablet { get; set; } = false;
+    private bool IsMobile = false;
+    private bool IsTablet = false;
+
+    private bool IsLive = false;
 
     private FigureSize logoSize = FigureSize.Is32x32;
 
@@ -88,6 +96,12 @@
         IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
 
         logoSize = IsMobile ? FigureSize.Is24x24 : FigureSize.Is32x32;
+
+        if (Data != null)
+        {
+            int i = Data.games.FindIndex(g => g.game_status.Contains("In Progress"));
+            IsLive = i >= 0;
+        }
 
         base.OnInitialized();
     }

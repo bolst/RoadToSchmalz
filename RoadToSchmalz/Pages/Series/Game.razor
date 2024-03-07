@@ -10,11 +10,11 @@
     string home_logo = $"logos/{home_team_stripped}.png";
     string away_logo = $"logos/{away_team_stripped}.png";
     <Row Width="Width.Is100" Margin="Margin.IsAuto">
-        <div @onclick="@(e => NavToGame(GameData.game_id))" style="cursor: pointer">
-            <Card Shadow="Shadow.Small">
-                <CardBody TextAlignment="TextAlignment.Center">
-                    <Row>
-                        @if (!IsMobile)
+    <div @onclick="@(e => NavToGame(GameData.game_id))" style="cursor: pointer">
+        <Card Shadow="Shadow.Small">
+            <CardBody TextAlignment="TextAlignment.Center">
+                <Row>
+                    @if (!IsMobile)
                         {
                             <Column>
                             </Column>
@@ -64,8 +64,9 @@
 
     #region components
     private RenderFragment<Data.Game> GameStatusBadge = (game) => @<Badge Color="Color.Success">@game.game_status</Badge>;
-    private RenderFragment<Data.Game> ScoreHeading = (game) => @<Heading Position="Position.Relative.Top.Is50.Translate.MiddleY"
-                                                                          Padding="Padding.Is3.FromBottom">@game.home_goal_count - @game.visiting_goal_count</Heading>;
+    private RenderFragment<Data.Game> ScoreHeading = (game) => @<Heading
+        Position="Position.Relative.Top.Is50.Translate.MiddleY" Padding="Padding.Is3.FromBottom">@game.home_goal_count -
+        @game.visiting_goal_count</Heading>;
     #endregion
 
     protected override async Task OnInitializedAsync()
@@ -79,7 +80,7 @@
         else
         {
             ScoreHeading = (game) => @<Heading Position="Position.Relative.Top.Is50.Translate.MiddleY"
-                                                                            Padding="Padding.Is3.FromBottom">@game.home_goal_count - @game.visiting_goal_count</Heading>;
+        Padding="Padding.Is3.FromBottom">@game.home_goal_count - @game.visiting_goal_count</Heading>;
         }
     }
 
@@ -94,7 +95,9 @@
             }
             else if (GameData.game_status.Contains("In Progress"))
             {
-                GameStatusBadge = (game) => @<Badge Color="Color.Primary"><Icon Name="IconName.Circle" IconSize="IconSize.Small" /> Live</Badge>;
+                GameStatusBadge = (game) => @<Badge Color="Color.Primary">
+        <Icon Name="IconName.Circle" IconSize="IconSize.Small" /> Live
+    </Badge>;
                 GameIsLiveOrComplete = true;
             }
             else
