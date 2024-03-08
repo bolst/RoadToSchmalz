@@ -210,7 +210,7 @@
     {
         Uri uri = new Uri(navManager.Uri);
         string? rvStr = System.Web.HttpUtility.ParseQueryString(uri.Query).Get("rv");
-        int roundViewLevel = CurrentRound - 1;
+        int roundViewLevel = CurrentRound - 2 ; // at least for now ... //CurrentRound - 1;
         if (!string.IsNullOrEmpty(rvStr) && int.TryParse(rvStr, out roundViewLevel))
         {
             // must be between 0 and 5
