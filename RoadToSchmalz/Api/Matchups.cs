@@ -27,11 +27,12 @@ namespace RoadToSchmalz.Api
             if (data == null || division == Divisions.DIVISION.NULL) return data;
 
             List<Data.Matchups> retval = data;
-            List<Data.Matchup> filtered_matchups = new List<Data.Matchup>();
+            List<Data.Matchup> filtered_matchups;
 
             // each round
             for (int i = 0; i < retval.Count(); i++)
             {
+                filtered_matchups = new List<Matchup>();
                 Data.Matchups round = retval[i];
                 List<Data.Matchup> matchups = round.matchups;
 

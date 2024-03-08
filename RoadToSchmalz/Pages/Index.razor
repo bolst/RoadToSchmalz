@@ -5,10 +5,7 @@
 @inject NavigationManager navManager
 
 <Div TextAlignment="TextAlignment.Center">
-    @if (!IsMobile)
-    {
-        <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />
-    }
+    <RoundDepthPicker @bind-RoundViewLevel="@RoundViewLevel" />
 </Div>
 @if (north_matchups != null
 && south_matchups != null
@@ -20,6 +17,14 @@
             for (int r = RoundViewLevel; r < TOTAL_PREFINAL_ROUNDS; r++)
             {
                 int r0 = r;
+                var m_count = 0;
+                var m_max = Math.Pow(2, TOTAL_PREFINAL_ROUNDS - r0 - 1);
+
+                @if (IsMobile && r0 != RoundViewLevel)
+                {
+                    continue;
+                }
+
                 @if (r0 < CurrentRound)
                 {
                     <Column>
@@ -28,12 +33,22 @@
                             {
                                 var _matchup = matchup;
                                 <Matchup Data="@_matchup" />
+                                m_count++;
                             }
                             @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
                             {
                                 var _matchup = matchup;
                                 <Matchup Data="@_matchup" />
+                                m_count++;
                             }
+                            @if (r0 != 0)
+                            {
+                                for (int i = m_count; i < m_max; i++)
+                                {
+                                    <Matchup />
+                                }
+                            }
+
                         </Div>
                     </Column>
                 }
@@ -43,7 +58,7 @@
                     {
                         <Column>
                             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                @for (int i = 0; i < Math.Pow(2, TOTAL_PREFINAL_ROUNDS - r0 - 1); i++)
+                                @for (int i = 0; i < m_max; i++)
                                 {
                                     <Matchup />
                                 }
@@ -55,11 +70,11 @@
         }
 
         <Column TextAlignment="TextAlignment.Center">
-@*
-            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                <Image Source="logos/playoffs.png" Width="Width.Is100" />
-            </Div>
-*@
+            @*
+        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+        <Image Source="logos/playoffs.png" Width="Width.Is100" />
+        </Div>
+        *@
             <Figure Size="@PjhlLogoSize" Position="Position.Relative.Top.Is50.Translate.MiddleY">
                 <FigureImage Source="logos/playoffs.png" />
             </Figure>
@@ -69,13 +84,21 @@
             for (int r = TOTAL_PREFINAL_ROUNDS - 1; r >= RoundViewLevel; r--)
             {
                 int r0 = r;
+                var m_count = 0;
+                var m_max = Math.Pow(2, TOTAL_PREFINAL_ROUNDS - r0 - 1);
+
+                @if (IsMobile && r0 != RoundViewLevel)
+                {
+                    continue;
+                }
+
                 @if (r0 >= CurrentRound)
                 {
                     if (!IsMobile)
                     {
                         <Column>
                             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                @for (int i = 0; i < Math.Pow(2, TOTAL_PREFINAL_ROUNDS - r0 - 1); i++)
+                                @for (int i = 0; i < m_max; i++)
                                 {
                                     <Matchup />
                                 }
@@ -91,11 +114,20 @@
                             {
                                 var _matchup = matchup;
                                 <Matchup Data="@_matchup" />
+                                m_count++;
                             }
                             @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
                             {
                                 var _matchup = matchup;
                                 <Matchup Data="@_matchup" />
+                                m_count++;
+                            }
+                            @if (r0 != 0)
+                            {
+                                for (int i = m_count; i < m_max; i++)
+                                {
+                                    <Matchup />
+                                }
                             }
                         </Div>
                     </Column>
@@ -110,7 +142,7 @@
     private const int TOTAL_PREFINAL_ROUNDS = 5;
 
     private int RoundViewLevel { get; set; } = 0;
-    private int CurrentRound {get; set;} = 0;
+    private int CurrentRound { get; set; } = 0;
 
     private FigureSize PjhlLogoSize = FigureSize.Is128x128;
 
@@ -144,17 +176,34 @@
     private void SetMatchups()
     {
         var Inst = Matchups.Instance();
-        north_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.CARRUTHERS);
-        north_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.POLLOCK)[0].matchups);
 
-        east_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.ORR);
-        east_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.TOD)[0].matchups);
+        var north_carruthers = Inst.GetMatchups(Data.Divisions.DIVISION.CARRUTHERS);
+        var north_pollock = Inst.GetMatchups(Data.Divisions.DIVISION.POLLOCK);
 
-        west_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.STOBBS);
-        west_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.YECK)[0].matchups);
+        var east_orr = Inst.GetMatchups(Data.Divisions.DIVISION.ORR);
+        var east_tod = Inst.GetMatchups(Data.Divisions.DIVISION.TOD);
 
-        south_matchups = Inst.GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);
-        south_matchups[0].matchups.AddRange(Inst.GetMatchups(Data.Divisions.DIVISION.DOHERTY)[0].matchups);
+        var west_yeck = Inst.GetMatchups(Data.Divisions.DIVISION.YECK);
+        var west_stobbs = Inst.GetMatchups(Data.Divisions.DIVISION.STOBBS);
+
+        var south_bloomfield = Inst.GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);
+        var south_doherty = Inst.GetMatchups(Data.Divisions.DIVISION.DOHERTY);
+
+        north_matchups = north_carruthers;
+        for (int round = 0; round < north_carruthers.Count(); round++)
+            north_matchups[round].matchups.AddRange(north_pollock[round].matchups);
+
+        east_matchups = east_orr;
+        for (int round = 0; round < east_orr.Count(); round++)
+            east_matchups[round].matchups.AddRange(east_tod[round].matchups);
+
+        west_matchups = west_yeck;
+        for (int round = 0; round < west_yeck.Count(); round++)
+            west_matchups[round].matchups.AddRange(west_stobbs[round].matchups);
+
+        south_matchups = south_bloomfield;
+        for (int round = 0; round < south_bloomfield.Count(); round++)
+            south_matchups[round].matchups.AddRange(south_doherty[round].matchups);
     }
 
     private void SetRoundView()
@@ -173,7 +222,7 @@
 
     private void SetCurrentRound()
     {
-        var rounds = new[]{north_matchups.Count(), east_matchups.Count(), west_matchups.Count(), south_matchups.Count()};
+        var rounds = new[] { north_matchups.Count(), east_matchups.Count(), west_matchups.Count(), south_matchups.Count() };
         CurrentRound = rounds.Min();
     }
 
