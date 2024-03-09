@@ -6,12 +6,13 @@
     <Card Shadow="Shadow.Default">
         <CardBody>
             <Row RowColumns="RowColumns.Are2">
-                @if (Data != null)
+                @if (Data != null && !Data.team1.Equals("0") && !Data.team2.Equals("0"))
                 {
                     <Column TextAlignment="TextAlignment.Center">
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
                             <Div>
-                                @{
+                                @if (Api.Teams.Instance().TeamIdNameMap.ContainsKey(Data.team1))
+                                {
                                     string team_name = Api.Teams.Instance().TeamIdNameMap[Data.team1];
                                     string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
                                     !Char.IsWhiteSpace(c)).ToArray());
@@ -28,7 +29,8 @@
                     <Column TextAlignment="TextAlignment.Center">
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
                             <Div>
-                                @{
+                                @if (Api.Teams.Instance().TeamIdNameMap.ContainsKey(Data.team2))
+                                {
                                     string team_name = Api.Teams.Instance().TeamIdNameMap[Data.team2];
                                     string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
                                     !Char.IsWhiteSpace(c)).ToArray());
