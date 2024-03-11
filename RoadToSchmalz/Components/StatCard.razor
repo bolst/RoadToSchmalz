@@ -40,11 +40,14 @@
                         }
                         <Column>
                             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                                @foreach (string stat in statsContent)
+                                @if (statsContent != null)
                                 {
-                                    <Heading Size="HeadingSize.Is5" TextWeight="TextWeight.Normal">
-                                        @stat
-                                    </Heading>
+                                    foreach (string stat in statsContent)
+                                    {
+                                        <Heading Size="HeadingSize.Is5" TextWeight="TextWeight.Normal">
+                                            @stat
+                                        </Heading>
+                                    }
                                 }
                             </Div>
                         </Column>
@@ -57,8 +60,8 @@
 
 @code {
     [Parameter] public string Type { get; set; } = "Player";
-    [Parameter] public RoadToSchmalz.Data.PlayerStats.PlayerStat Stats { get; set; } = null;
-    [Parameter] public RoadToSchmalz.Data.GoalieStats.GoalieStat GoalieStats { get; set; } = null;
+    [Parameter] public RoadToSchmalz.Data.PlayerStats.PlayerStat? Stats { get; set; } = null;
+    [Parameter] public RoadToSchmalz.Data.GoalieStats.GoalieStat? GoalieStats { get; set; } = null;
 
     private IFluentSizing RowWidth = Width.Is50;
     private IFluentRowColumns RowCols = RowColumns.Are3;
@@ -79,7 +82,7 @@
 
     private void NavToPlayerProfile()
     {
-        string player_id = "";
+        string? player_id = "";
         if (Stats != null) player_id = Stats.row.player_id;
         else if (GoalieStats != null) player_id = GoalieStats.row.player_id;
 
@@ -87,10 +90,10 @@
     }
 
     #region stats
-    private List<string> statsContent { get; set; }
-    private string teamName { get; set; }
-    private string name { get; set; }
-    private string headshotSource { get; set; }
+    private List<string>? statsContent { get; set; }
+    private string? teamName { get; set; }
+    private string? name { get; set; }
+    private string? headshotSource { get; set; }
     #endregion
 
     protected override void OnInitialized()

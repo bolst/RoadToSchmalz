@@ -163,6 +163,7 @@
         catch (JSDisconnectedException exc)
         {
             Console.WriteLine("Warning: JS Disconnect");
+            Console.WriteLine(exc.StackTrace);
             IsMobile = false;
         }
 
@@ -189,28 +190,40 @@
         var south_bloomfield = Inst.GetMatchups(Data.Divisions.DIVISION.BLOOMFIELD);
         var south_doherty = Inst.GetMatchups(Data.Divisions.DIVISION.DOHERTY);
 
-        north_matchups = north_carruthers;
-        for (int round = 0; round < north_carruthers.Count(); round++)
-            north_matchups[round].matchups.AddRange(north_pollock[round].matchups);
+        if (north_carruthers != null && north_pollock != null)
+        {
+            north_matchups = north_carruthers;
+            for (int round = 0; round < north_carruthers.Count(); round++)
+                north_matchups[round].matchups.AddRange(north_pollock[round].matchups);
+        }
 
-        east_matchups = east_orr;
-        for (int round = 0; round < east_orr.Count(); round++)
-            east_matchups[round].matchups.AddRange(east_tod[round].matchups);
+        if (east_orr != null && east_tod != null)
+        {
+            east_matchups = east_orr;
+            for (int round = 0; round < east_orr.Count(); round++)
+                east_matchups[round].matchups.AddRange(east_tod[round].matchups);
+        }
 
-        west_matchups = west_yeck;
-        for (int round = 0; round < west_yeck.Count(); round++)
-            west_matchups[round].matchups.AddRange(west_stobbs[round].matchups);
+        if (west_yeck != null && west_stobbs != null)
+        {
+            west_matchups = west_yeck;
+            for (int round = 0; round < west_yeck.Count(); round++)
+                west_matchups[round].matchups.AddRange(west_stobbs[round].matchups);
+        }
 
-        south_matchups = south_bloomfield;
-        for (int round = 0; round < south_bloomfield.Count(); round++)
-            south_matchups[round].matchups.AddRange(south_doherty[round].matchups);
+        if (south_bloomfield != null && south_doherty != null)
+        {
+            south_matchups = south_bloomfield;
+            for (int round = 0; round < south_bloomfield.Count(); round++)
+                south_matchups[round].matchups.AddRange(south_doherty[round].matchups);
+        }
     }
 
     private void SetRoundView()
     {
         Uri uri = new Uri(navManager.Uri);
         string? rvStr = System.Web.HttpUtility.ParseQueryString(uri.Query).Get("rv");
-        int roundViewLevel = CurrentRound - 2 ; // at least for now ... //CurrentRound - 1;
+        int roundViewLevel = CurrentRound - 1;
         if (!string.IsNullOrEmpty(rvStr) && int.TryParse(rvStr, out roundViewLevel))
         {
             // must be between 0 and 5
@@ -222,7 +235,12 @@
 
     private void SetCurrentRound()
     {
-        var rounds = new[] { north_matchups.Count(), east_matchups.Count(), west_matchups.Count(), south_matchups.Count() };
+        int n = north_matchups == null ? 1 : north_matchups.Count();
+        int e = east_matchups == null ? 1 : east_matchups.Count();
+        int s = south_matchups == null ? 1 : south_matchups.Count();
+        int w = west_matchups == null ? 1 : west_matchups.Count();
+
+        var rounds = new[] { n, e, w, s };
         CurrentRound = rounds.Min();
     }
 

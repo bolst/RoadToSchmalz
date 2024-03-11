@@ -17,8 +17,8 @@ namespace RoadToSchmalz.Api
 
         public List<Data.PlayerStats.PlayerStat>? GetStats()
         {
-            string fileContent = File.ReadAllText("dat/player_data.json");
-            List<Data.PlayerStats.PlayerStat> data = JsonSerializer.Deserialize<List<Data.PlayerStats.PlayerStat>>(fileContent);
+            string? fileContent = File.ReadAllText("dat/player_data.json");
+            List<Data.PlayerStats.PlayerStat>? data = JsonSerializer.Deserialize<List<Data.PlayerStats.PlayerStat>>(fileContent);
             return data;
         }
 

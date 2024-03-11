@@ -73,10 +73,7 @@
 </div>
 
 @code {
-    [Parameter] public string Text { get; set; }
-    [Parameter] public Data.Matchup Data { get; set; }
-    private string Team1Name;
-    private string Team2Name;
+    [Parameter] public Data.Matchup? Data { get; set; } = null;
 
     private bool IsMobile = false;
     private bool IsTablet = false;
