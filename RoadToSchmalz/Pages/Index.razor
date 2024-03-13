@@ -193,28 +193,28 @@
         if (north_carruthers != null && north_pollock != null)
         {
             north_matchups = north_carruthers;
-            for (int round = 0; round < north_carruthers.Count(); round++)
+            for (int round = 0; round < north_pollock.Count(); round++)
                 north_matchups[round].matchups.AddRange(north_pollock[round].matchups);
         }
 
         if (east_orr != null && east_tod != null)
         {
             east_matchups = east_orr;
-            for (int round = 0; round < east_orr.Count(); round++)
+            for (int round = 0; round < east_tod.Count(); round++)
                 east_matchups[round].matchups.AddRange(east_tod[round].matchups);
         }
 
         if (west_yeck != null && west_stobbs != null)
         {
             west_matchups = west_yeck;
-            for (int round = 0; round < west_yeck.Count(); round++)
+            for (int round = 0; round < west_stobbs.Count(); round++)
                 west_matchups[round].matchups.AddRange(west_stobbs[round].matchups);
         }
 
         if (south_bloomfield != null && south_doherty != null)
         {
             south_matchups = south_bloomfield;
-            for (int round = 0; round < south_bloomfield.Count(); round++)
+            for (int round = 0; round < south_doherty.Count(); round++)
                 south_matchups[round].matchups.AddRange(south_doherty[round].matchups);
         }
     }

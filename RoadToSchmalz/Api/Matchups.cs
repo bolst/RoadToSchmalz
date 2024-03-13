@@ -39,7 +39,8 @@ namespace RoadToSchmalz.Api
                 // each matchup
                 foreach (Data.Matchup matchup in matchups)
                 {
-                    string strDiv = division.ToString().ToLower();
+                    // cause pjhl can't spell their own divisions correctly
+                    string strDiv = Divisions.ToString(division).ToLower();
                     if (matchup.series_name.ToLower().Contains(strDiv))
                     {
                         filtered_matchups.Add(matchup);

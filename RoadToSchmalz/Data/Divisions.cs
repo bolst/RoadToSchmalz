@@ -15,6 +15,20 @@ namespace RoadToSchmalz.Data
             NULL
         }
 
+        // cause pjhl can't spell their own divisions correctly
+        public static string ToString(DIVISION d)
+        {
+            switch (d)
+            {
+                case DIVISION.CARRUTHERS:
+                    return "carr";
+                case DIVISION.BLOOMFIELD:
+                    return "bloom";
+                default:
+                    return d.ToString();
+            }
+        }
+
         public enum CONFERENCE
         {
             NORTH,
