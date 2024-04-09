@@ -14,15 +14,24 @@ namespace RoadToSchmalz.Api
             return instance;
         }
 
-        public List<Data.Matchups>? GetMatchups(Divisions.DIVISION division = Divisions.DIVISION.NULL)
+        public int GetCurrentRound()
         {
             string fileContent = File.ReadAllText("dat/matchups.json");
             List<Data.Matchups>? data = JsonSerializer.Deserialize<List<Data.Matchups>>(fileContent);
-            data = FilterByDivision(data, division);
+
+            string strRound = data.MaxBy(x => int.Parse(x.round)).round;
+            return int.Parse(strRound);
+        }
+
+        public List<Data.Matchups>? GetMatchups(Divisions.DIVISION division = Divisions.DIVISION.NULL, int currentRound = 0)
+        {
+            string fileContent = File.ReadAllText("dat/matchups.json");
+            List<Data.Matchups>? data = JsonSerializer.Deserialize<List<Data.Matchups>>(fileContent);
+            data = FilterByDivision(data, division, currentRound);
             return data;
         }
 
-        public List<Data.Matchups>? FilterByDivision(List<Data.Matchups>? data, Divisions.DIVISION division)
+        public List<Data.Matchups>? FilterByDivision(List<Data.Matchups>? data, Divisions.DIVISION division, int currentRound)
         {
             if (data == null || division == Divisions.DIVISION.NULL) return data;
 
@@ -41,7 +50,8 @@ namespace RoadToSchmalz.Api
                 {
                     // cause pjhl can't spell their own divisions correctly
                     string strDiv = Divisions.ToString(division).ToLower();
-                    if (matchup.series_name.ToLower().Contains(strDiv))
+                    //if (matchup.series_name.ToLower().Contains(strDiv))
+                    if (FilterRule.DivisionMatches(matchup, division, currentRound))
                     {
                         filtered_matchups.Add(matchup);
                     }
