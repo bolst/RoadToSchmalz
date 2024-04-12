@@ -3,8 +3,11 @@ using System.Text.Json.Nodes;
 using RoadToSchmalz.Data;
 using RoadToSchmalz.Data.PlayerStats;
 
+
 namespace RoadToSchmalz.Api
 {
+    using StatType = List<Data.PlayerStats.PlayerStat>;
+
     public class Players : AbstractPlayer
     {
         private static Players? instance = null;
@@ -15,10 +18,10 @@ namespace RoadToSchmalz.Api
             return instance;
         }
 
-        public List<Data.PlayerStats.PlayerStat>? GetStats()
+        public StatType? GetStats()
         {
             string? fileContent = File.ReadAllText("dat/player_data.json");
-            List<Data.PlayerStats.PlayerStat>? data = JsonSerializer.Deserialize<List<Data.PlayerStats.PlayerStat>>(fileContent);
+            StatType? data = JsonSerializer.Deserialize<StatType>(fileContent);
             return data;
         }
 

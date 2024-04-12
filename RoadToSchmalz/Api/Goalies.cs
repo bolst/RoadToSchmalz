@@ -4,8 +4,11 @@ using RoadToSchmalz.Data;
 
 namespace RoadToSchmalz.Api
 {
+    using StatType = List<Data.GoalieStats.GoalieStat>;
+
     public class Goalies : AbstractPlayer
     {
+
         private static Goalies? instance = null;
         public Goalies() { }
         public static Goalies Instance()
@@ -14,10 +17,10 @@ namespace RoadToSchmalz.Api
             return instance;
         }
 
-        public List<Data.GoalieStats.GoalieStat>? GetStats()
+        public StatType? GetStats()
         {
             string fileContent = File.ReadAllText("dat/goalie_data.json");
-            List<Data.GoalieStats.GoalieStat> data = JsonSerializer.Deserialize<List<Data.GoalieStats.GoalieStat>>(fileContent);
+            StatType data = JsonSerializer.Deserialize<StatType>(fileContent);
             return data;
         }
 

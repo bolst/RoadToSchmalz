@@ -21,13 +21,11 @@
 @code {
 
     List<PlayerStat>? PlayerData { get; set; } = null;
-    protected override void OnInitialized()
-    {
-        PlayerData = RoadToSchmalz.Api.Players.Instance().GetStats();
-    }
 
     protected override async Task OnInitializedAsync()
     {
         await RoadToSchmalz.Api.Players.Instance().FetchData();
+        PlayerData = RoadToSchmalz.Api.Players.Instance().GetStats();
+        PlayerData = RoadToSchmalz.Api.AbstractPlayer.FilterRemaining(PlayerData);
     }
 }
