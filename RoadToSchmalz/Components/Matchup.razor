@@ -17,7 +17,7 @@
                                     string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
                                     !Char.IsWhiteSpace(c)).ToArray());
                                     string path = $"logos/{team_name_stripped}.png";
-                                    <Image Source="@path" Width="Width.Is100" />
+                                    <Image Source="@path" Width="@ImageWidth" />
                                 }
                             </Div>
                             <Div>
@@ -35,7 +35,7 @@
                                     string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
                                     !Char.IsWhiteSpace(c)).ToArray());
                                     string path = $"logos/{team_name_stripped}.png";
-                                    <Image Source="@path" Width="Width.Is100" />
+                                    <Image Source="@path" Width="@ImageWidth" />
                                 }
                             </Div>
                             <Div>
@@ -74,18 +74,21 @@
 
 @code {
     [Parameter] public Data.Matchup? Data { get; set; } = null;
+    [Parameter] public int Round { get; set; } = 1;
 
     private bool IsMobile = false;
 
     private bool IsLive = false;
 
     private FigureSize logoSize = FigureSize.Is32x32;
+    private IFluentSizing ImageWidth = Width.Is100;
 
     private RenderFragment RenderTeamWins(int wins)
     {
         TextColor color = (wins == 4) ? TextColor.Success : TextColor.Dark;
         RenderFragment item = @<Paragraph TextSize="TextSize.Small" TextWeight="TextWeight.Bold" TextColor="@color">@wins
-    </Paragraph>;
+    </Paragraph>
+    ;
         return item;
     }
 
@@ -99,6 +102,11 @@
         {
             int i = Data.games.FindIndex(g => g.game_status.Contains("In Progress"));
             IsLive = i >= 0;
+        }
+
+        if (!IsMobile)
+        {
+            ImageWidth = (Round == 5) ? Width.Is50 : Width.Is100;
         }
 
         base.OnInitialized();

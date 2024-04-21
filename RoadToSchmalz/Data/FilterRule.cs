@@ -6,7 +6,7 @@ namespace RoadToSchmalz.Data
     {
         public static bool DivisionMatches(Data.Matchup matchup, Divisions.DIVISION div, int round)
         {
-            string strDiv = div.ToString().ToLower();
+            string strDiv = Divisions.ToString(div).ToLower();
             string strSeriesName = matchup.series_name.ToLower();
 
             bool retval = strSeriesName.Contains(strDiv);

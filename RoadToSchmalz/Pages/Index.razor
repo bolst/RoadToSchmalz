@@ -37,7 +37,7 @@
                                 @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" />
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                     m_count++;
                                 }
                                 if (r0 + 1 != CurrentRound)
@@ -45,7 +45,7 @@
                                     @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
                                     {
                                         var _matchup = matchup;
-                                        <Matchup Data="@_matchup" />
+                                        <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                         m_count++;
                                     }
                                 }
@@ -62,13 +62,13 @@
                                 @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" />
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                     m_count++;
                                 }
                                 @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" />
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                     m_count++;
                                 }
                                 @if (r0 != 0)
@@ -152,14 +152,14 @@
                                     @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
                                     {
                                         var _matchup = matchup;
-                                        <Matchup Data="@_matchup" />
+                                        <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                         m_count++;
                                     }
                                 }
                                 @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" />
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                     m_count++;
                                 }
                                 @if (r0 != 0)
@@ -179,13 +179,13 @@
                                 @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" />
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)"/>
                                     m_count++;
                                 }
                                 @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" />
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                     m_count++;
                                 }
                                 @if (r0 != 0)
