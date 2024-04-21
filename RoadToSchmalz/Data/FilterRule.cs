@@ -13,7 +13,7 @@ namespace RoadToSchmalz.Data
 
             if (retval) { return retval; }
             
-            else if (round >= 4) // at round 4 (conference finals) we lose division names
+            else if (matchup.round.Equals("4") || matchup.round.Equals("5") || matchup.round.Equals("6"))
             {
                 switch(div)
                 {
@@ -44,7 +44,7 @@ namespace RoadToSchmalz.Data
                     default:
                         break;
                 }
-            }
+            }            
             
 
             return retval;
