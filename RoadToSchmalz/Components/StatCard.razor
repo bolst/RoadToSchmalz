@@ -102,9 +102,9 @@
         {
             statsContent = new List<string>()
 {
+$"GP: {Stats.row.games_played}",
 $"Points: {Stats.row.points}",
 $"Goals: {Stats.row.goals}",
-$"Assists: {Stats.row.assists}",
 $"PIM: {Stats.row.penalty_minutes}",
 };
             teamName = Api.Teams.Instance().TeamIdNameMap[@Stats.prop.team_code.teamLink];

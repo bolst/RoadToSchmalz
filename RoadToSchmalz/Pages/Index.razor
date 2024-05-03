@@ -101,14 +101,15 @@
         }
 
         <Column TextAlignment="TextAlignment.Center">
-            @*
-        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-        <Image Source="logos/playoffs.png" Width="Width.Is100" />
-        </Div>
-        *@
-            <Figure Size="@PjhlLogoSize" Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                <FigureImage Source="logos/playoffs.png" />
-            </Figure>
+            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                <FinalsTeam Team="@west_matchups.Last().matchups.Last()" RoundViewLevel="@RoundViewLevel"/>
+                
+                <Figure Size="@PjhlLogoSize">
+                    <FigureImage Source="logos/playoffs.png" />
+                
+                </Figure>
+                <FinalsTeam Team="@north_matchups.Last().matchups.Last()" RoundViewLevel="@RoundViewLevel" />
+            </Div>
         </Column>
 
         @{

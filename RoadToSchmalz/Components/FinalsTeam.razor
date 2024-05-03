@@ -1,0 +1,18 @@
+﻿@using RoadToSchmalz.Data
+
+@if(Team != null)
+{
+    @if(RoundViewLevel == 5)
+    {
+        
+        @*<h3>@Team.series_name</h3>*@
+    }
+    else
+    {
+    }
+}
+
+@code {
+    [Parameter] public Data.Matchup? Team { get; set; }
+    [Parameter] public int RoundViewLevel { get; set; } = 0;
+}
