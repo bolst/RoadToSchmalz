@@ -140,7 +140,14 @@
             ImageWidth = (Round == 5) ? Width.Is50 : Width.Is75;
         }
 
-        MainDivWidth = (Round == 6) ? Width.Is50 : Width.Is100;
+        if (IsMobile)
+        {
+            MainDivWidth = Width.Is100;
+        }
+        else
+        {
+            MainDivWidth = (Round == 6) ? Width.Is50 : ((Round == 5) ? Width.Is75 : Width.Is100);
+        }
 
         base.OnInitialized();
     }

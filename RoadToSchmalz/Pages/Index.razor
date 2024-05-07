@@ -123,15 +123,20 @@
 
         <Column TextAlignment="TextAlignment.Center">
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                <FinalsTeam Data="@west_matchups.Last().matchups.Last()" Round="@(RoundViewLevel + 1)"
-                    Conference="@Data.Divisions.CONFERENCE.WEST" />
+                @if ((IsMobile && RoundViewLevel == 5) || (!IsMobile))
+                {
+                    <FinalsTeam Data="@west_matchups.Last().matchups.Last()" Round="@(RoundViewLevel + 1)"
+                        Conference="@Data.Divisions.CONFERENCE.WEST" />
+                }
 
                 <Figure Size="@PjhlLogoSize">
                     <FigureImage Source="logos/playoffs.png" />
                 </Figure>
-
-                <FinalsTeam Data="@east_matchups.Last().matchups.Last()" Round="@(RoundViewLevel + 1)"
-                    Conference="@Data.Divisions.CONFERENCE.EAST" />
+                @if ((IsMobile && RoundViewLevel == 5) || (!IsMobile))
+                {
+                    <FinalsTeam Data="@east_matchups.Last().matchups.Last()" Round="@(RoundViewLevel + 1)"
+                        Conference="@Data.Divisions.CONFERENCE.EAST" />
+                }
             </Div>
         </Column>
 
