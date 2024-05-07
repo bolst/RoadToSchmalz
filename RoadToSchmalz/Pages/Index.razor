@@ -12,7 +12,7 @@
 && east_matchups != null)
 {
     <Row Position="Position.Relative.Top.Is50.Translate.MiddleY">
-        @{
+    @{
             for (int r = RoundViewLevel; r < TOTAL_PREFINAL_ROUNDS; r++)
             {
                 int r0 = r;
@@ -28,9 +28,30 @@
                 {
                     <Column>
                         <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                            @if(CurrentRound == 6)
+                            @if (CurrentRound == 6)
                             {
-                            
+                                @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
+                                {
+                                    var _matchup = matchup;
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
+                                    m_count++;
+                                }
+                                if (r0 + 2 != CurrentRound)
+                                {
+                                    @foreach (Data.Matchup matchup in south_matchups[r0].matchups)
+                                    {
+                                        var _matchup = matchup;
+                                        <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
+                                        m_count++;
+                                    }
+                                }
+                                @if (r0 != 0)
+                                {
+                                    for (int i = m_count; i < m_max; i++)
+                                    {
+                                        <Matchup />
+                                    }
+                                }
                             }
                             else if (CurrentRound == 5)
                             {
@@ -58,7 +79,7 @@
                                 }
                             }
                             else
-                            {  
+                            {
                                 @foreach (Data.Matchup matchup in north_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
@@ -102,13 +123,15 @@
 
         <Column TextAlignment="TextAlignment.Center">
             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
-                <FinalsTeam Team="@west_matchups.Last().matchups.Last()" RoundViewLevel="@RoundViewLevel"/>
-                
+                <FinalsTeam Data="@west_matchups.Last().matchups.Last()" Round="@(RoundViewLevel + 1)"
+                    Conference="@Data.Divisions.CONFERENCE.WEST" />
+
                 <Figure Size="@PjhlLogoSize">
                     <FigureImage Source="logos/playoffs.png" />
-                
                 </Figure>
-                <FinalsTeam Team="@north_matchups.Last().matchups.Last()" RoundViewLevel="@RoundViewLevel" />
+
+                <FinalsTeam Data="@east_matchups.Last().matchups.Last()" Round="@(RoundViewLevel + 1)"
+                    Conference="@Data.Divisions.CONFERENCE.EAST" />
             </Div>
         </Column>
 
@@ -142,7 +165,32 @@
                 {
                     if (CurrentRound == 6)
                     {
-
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                @if (r0 + 2 != CurrentRound)
+                                {
+                                    @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
+                                    {
+                                        var _matchup = matchup;
+                                        <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
+                                        m_count++;
+                                    }
+                                }
+                                @foreach (Data.Matchup matchup in west_matchups[r0].matchups)
+                                {
+                                    var _matchup = matchup;
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
+                                    m_count++;
+                                }
+                                @if (r0 != 0)
+                                {
+                                    for (int i = m_count; i < m_max; i++)
+                                    {
+                                        <Matchup />
+                                    }
+                                }
+                            </Div>
+                        </Column>
                     }
                     else if (CurrentRound == 5)
                     {
@@ -180,7 +228,7 @@
                                 @foreach (Data.Matchup matchup in east_matchups[r0].matchups)
                                 {
                                     var _matchup = matchup;
-                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)"/>
+                                    <Matchup Data="@_matchup" Round="@(RoundViewLevel + 1)" />
                                     m_count++;
                                 }
                                 @foreach (Data.Matchup matchup in west_matchups[r0].matchups)

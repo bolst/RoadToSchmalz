@@ -12,10 +12,9 @@ namespace RoadToSchmalz.Data
             bool retval = strSeriesName.Contains(strDiv);
 
             if (retval) { return retval; }
-            
-            else if (matchup.round.Equals("4") || matchup.round.Equals("5") || matchup.round.Equals("6"))
+            else if (matchup.round.Equals("4") || matchup.round.Equals("5") /*|| matchup.round.Equals("6")*/)
             {
-                switch(div)
+                switch (div)
                 {
                     #region north
                     case Divisions.DIVISION.POLLOCK:
@@ -44,8 +43,19 @@ namespace RoadToSchmalz.Data
                     default:
                         break;
                 }
-            }            
-            
+            }
+            else if (matchup.round.Equals("6")) // finals
+            {
+                switch (div)
+                {
+                    case Divisions.DIVISION.ORR:
+                    case Divisions.DIVISION.STOBBS:
+                    case Divisions.DIVISION.YECK:
+                    case Divisions.DIVISION.TOD:
+                        return strSeriesName.Contains("pjhl final");
+                }
+            }
+
 
             return retval;
         }
