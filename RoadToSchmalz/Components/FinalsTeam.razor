@@ -1,30 +1,57 @@
 ﻿@namespace RoadToSchmalz.Components
 @using RoadToSchmalz.Data
+@using RoadToSchmalz.Data.PlayerStats
+@using RoadToSchmalz.Data.GoalieStats
 @inject NavigationManager navManager
 @inject IJSRuntime JSRuntime
 
 <Div @onclick="@(e => DisplayGameStats())" style="cursor: pointer" Width="@MainDivWidth" Margin="Margin.IsAuto">
     <Card Shadow="Shadow.Default" Margin="Margin.IsAuto">
         <CardBody>
-            @if (Data != null && !Data.team1.Equals("0") && !Data.team2.Equals("0"))
+            @if (Data != null && !Data.team1.Equals("0") && !Data.team2.Equals("0") && PlayerData != null && GoalieData
+            != null)
             {
                 string team = "";
                 int wins = 0;
                 @if (Conference == Divisions.CONFERENCE.WEST)
                 {
-                    team = Data.team1;
-                    wins = Data.team1_wins;
+                    team = Data.team2;
+                    wins = Data.team2_wins;
                 }
                 else if (Conference == Divisions.CONFERENCE.EAST)
                 {
-                    team = Data.team2;
-                    wins = Data.team2_wins;
+                    team = Data.team1;
+                    wins = Data.team1_wins;
                 }
                 @if (Round == 6)
                 {
 
                     <Row RowColumns="RowColumns.Are3">
-                        <Column></Column>
+                        <Column>
+                            @foreach (PlayerStat stat in PlayerData)
+                            {
+                                string headshotSource = headshotSources[stat.row.name];
+                                <Row Margin="Margin.IsAuto.OnY">
+                                    <Column Margin="Margin.IsAuto">
+                                        <Figure Size="FigureSize.Is64x64">
+                                            <FigureImage Source="@headshotSource" AlternateText=""
+                                                Position="Position.Relative.Top.Is50.Translate.MiddleY" Rounded />
+                                        </Figure>
+                                    </Column>
+                                    <Column Margin="Margin.IsAuto">
+                                        <Row>
+                                            <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@stat.row.name</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">Points: @stat.row.points</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">Goals: @stat.row.goals</Text>
+                                        </Row>
+                                    </Column>
+                                </Row>
+                            }
+                        </Column>
 
                         <Column TextAlignment="TextAlignment.Center">
                             <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
@@ -43,6 +70,32 @@
                                 </Div>
                             </Div>
 
+                        </Column>
+
+                        <Column Margin="Margin.IsAuto.OnY">
+                            @foreach (GoalieStat stat in GoalieData)
+                            {
+                                string headshotSource = headshotSources[stat.row.name];
+                                <Row>
+                                    <Column Margin="Margin.IsAuto">
+                                        <Figure Size="FigureSize.Is64x64">
+                                            <FigureImage Source="@headshotSource" AlternateText=""
+                                                Position="Position.Relative.Top.Is50.Translate.MiddleY" Rounded />
+                                        </Figure>
+                                    </Column>
+                                    <Column Margin="Margin.IsAuto">
+                                        <Row>
+                                            <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@stat.row.name</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">GAA: @stat.row.goals_against_average</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">SV%: @stat.row.save_percentage</Text>
+                                        </Row>
+                                    </Column>
+                                </Row>
+                            }
                         </Column>
                     </Row>
                 }
@@ -117,11 +170,17 @@
     private RenderFragment RenderTeamWins(int wins)
     {
         TextColor color = (wins == 4) ? TextColor.Success : TextColor.Dark;
-        RenderFragment item = @<Paragraph TextSize="TextSize.Small" TextWeight="TextWeight.Bold" TextColor="@color">@wins
+        RenderFragment item = @<Paragraph TextSize="TextSize.Medium" TextWeight="TextWeight.Bold" TextColor="@color">@wins
     </Paragraph>
 ;
         return item;
     }
+
+    List<PlayerStat>? PlayerData { get; set; } = null;
+    List<GoalieStat>? GoalieData { get; set; } = null;
+
+    Dictionary<string, string> headshotSources = new();
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -147,6 +206,27 @@
         else
         {
             MainDivWidth = (Round == 6) ? Width.Is50 : ((Round == 5) ? Width.Is75 : Width.Is100);
+        }
+
+        string team_code = (Conference == Divisions.CONFERENCE.WEST) ? "LAK" : "CLA";
+        await RoadToSchmalz.Api.Players.Instance().FetchData();
+        PlayerData = RoadToSchmalz.Api.Players.Instance().GetStats();
+        PlayerData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsPlayers(PlayerData, team_code);
+
+        await RoadToSchmalz.Api.Goalies.Instance().FetchData();
+        GoalieData = RoadToSchmalz.Api.Goalies.Instance().GetStats();
+        GoalieData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsGoalies(GoalieData, team_code);
+
+        if (PlayerData != null)
+        {
+            foreach (PlayerStat stat in PlayerData)
+            {
+                headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+            }
+            foreach (GoalieStat stat in GoalieData)
+            {
+                headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+            }
         }
 
         base.OnInitialized();
