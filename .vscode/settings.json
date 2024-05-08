@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/559fee50-ce0f-442c-afc4-80c18eea984d/resourceGroups/myResourceGroup/providers/Microsoft.Web/sites/RoadToSchmalz",
+    "appService.deploySubpath": "RoadToSchmalz/bin/Publish"
+}

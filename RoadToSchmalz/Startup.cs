@@ -4,27 +4,28 @@ using Blazorise.Icons.FontAwesome;
 
 namespace RoadToSchmalz;
 
+// dotnet publish -c Release -o ./bin/Publish
 public class Startup
 {
     // This method gets called by the runtime. Use this method to add services to the container.
     // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-    public void ConfigureServices( IServiceCollection services )
+    public void ConfigureServices(IServiceCollection services)
     {
         services.AddRazorPages();
         services.AddServerSideBlazor();
 
-        services.AddServerSideBlazor().AddHubOptions( ( o ) =>
+        services.AddServerSideBlazor().AddHubOptions((o) =>
         {
             o.MaximumReceiveMessageSize = 1024 * 1024 * 100;
-        } );
+        });
 
-        AddBlazorise( services );
+        AddBlazorise(services);
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure( IApplicationBuilder app, IWebHostEnvironment env )
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        if ( env.IsDevelopment() )
+        if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
         }
@@ -47,14 +48,14 @@ public class Startup
         //    o.TransportMaxBufferSize = 1024 * 1024 * 100; // larger size
         //} ) );
 
-        app.UseEndpoints( endpoints =>
+        app.UseEndpoints(endpoints =>
         {
             endpoints.MapBlazorHub();
-            endpoints.MapFallbackToPage( "/_Host" );
-        } );
+            endpoints.MapFallbackToPage("/_Host");
+        });
     }
 
-    public void AddBlazorise( IServiceCollection services )
+    public void AddBlazorise(IServiceCollection services)
     {
         services
             .AddBlazorise();
