@@ -217,7 +217,7 @@
         GoalieData = RoadToSchmalz.Api.Goalies.Instance().GetStats();
         GoalieData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsGoalies(GoalieData, team_code);
 
-        if (PlayerData != null)
+        if (PlayerData != null && GoalieData != null)
         {
             foreach (PlayerStat stat in PlayerData)
             {
