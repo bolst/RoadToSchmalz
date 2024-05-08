@@ -167,6 +167,8 @@
     private IFluentSizing ImageWidth = Width.Is100;
     private IFluentSizing MainDivWidth = Width.Is100;
 
+    private string MT { get; set; } = "hi";
+
     private RenderFragment RenderTeamWins(int wins)
     {
         TextColor color = (wins == 4) ? TextColor.Success : TextColor.Dark;
@@ -208,25 +210,32 @@
             MainDivWidth = (Round == 6) ? Width.Is50 : ((Round == 5) ? Width.Is75 : Width.Is100);
         }
 
-        string team_code = (Conference == Divisions.CONFERENCE.WEST) ? "LAK" : "CLA";
-        await RoadToSchmalz.Api.Players.Instance().FetchData();
-        PlayerData = RoadToSchmalz.Api.Players.Instance().GetStats();
-        PlayerData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsPlayers(PlayerData, team_code);
-
-        await RoadToSchmalz.Api.Goalies.Instance().FetchData();
-        GoalieData = RoadToSchmalz.Api.Goalies.Instance().GetStats();
-        GoalieData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsGoalies(GoalieData, team_code);
-
-        if (PlayerData != null && GoalieData != null)
+        try
         {
-            foreach (PlayerStat stat in PlayerData)
+            string team_code = (Conference == Divisions.CONFERENCE.WEST) ? "LAK" : "CLA";
+            //await RoadToSchmalz.Api.Players.Instance().FetchData();
+            PlayerData = RoadToSchmalz.Api.Players.Instance().GetStats();
+            PlayerData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsPlayers(PlayerData, team_code);
+
+            //await RoadToSchmalz.Api.Goalies.Instance().FetchData();
+            GoalieData = RoadToSchmalz.Api.Goalies.Instance().GetStats();
+            GoalieData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsGoalies(GoalieData, team_code);
+
+            if (PlayerData != null && GoalieData != null)
             {
-                headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+                foreach (PlayerStat stat in PlayerData)
+                {
+                    headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+                }
+                foreach (GoalieStat stat in GoalieData)
+                {
+                    headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+                }
             }
-            foreach (GoalieStat stat in GoalieData)
-            {
-                headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
-            }
+        }
+        catch (Exception exc)
+        {
+            MT = exc.ToString();
         }
 
         base.OnInitialized();

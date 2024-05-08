@@ -20,9 +20,13 @@ namespace RoadToSchmalz.Api
 
         public StatType? GetStats()
         {
-            string? fileContent = File.ReadAllText("dat/player_data.json");
-            StatType? data = JsonSerializer.Deserialize<StatType>(fileContent);
-            return data;
+            using (var stream = new StreamReader("dat/player_data.json"))
+            {
+                string fileContent = stream.ReadToEnd();
+                StatType? data = JsonSerializer.Deserialize<StatType>(fileContent);
+                stream.Close();
+                return data;
+            }
         }
 
         public async Task FetchData()
@@ -47,9 +51,10 @@ namespace RoadToSchmalz.Api
                     .EnumerateArray()
                     .ElementAt(0)
                     .GetProperty("data");
-                    await using (var playerDataFile = System.IO.File.CreateText("dat/player_data.json"))
+                    using (var playerDataFile = System.IO.File.CreateText("dat/player_data.json"))
                     {
                         await JsonSerializer.SerializeAsync(playerDataFile.BaseStream, playerData);
+                        playerDataFile.Close();
                     }
 
                     Console.WriteLine("Got player data");
