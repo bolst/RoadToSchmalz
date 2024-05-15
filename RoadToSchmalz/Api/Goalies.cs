@@ -19,7 +19,7 @@ namespace RoadToSchmalz.Api
 
         public StatType? GetStats()
         {
-            using (var stream = new StreamReader("dat/goalie_data.json"))
+            using (var stream = new StreamReader("wwwroot/dat/goalie_data.json"))
             {
                 string fileContent = stream.ReadToEnd();
                 StatType? data = JsonSerializer.Deserialize<StatType>(fileContent);
@@ -50,7 +50,7 @@ namespace RoadToSchmalz.Api
                     .EnumerateArray()
                     .ElementAt(0)
                     .GetProperty("data");
-                    using (var goalieDataFile = System.IO.File.CreateText("dat/goalie_data.json"))
+                    using (var goalieDataFile = System.IO.File.CreateText("wwwroot/dat/goalie_data.json"))
                     {
                         await JsonSerializer.SerializeAsync(goalieDataFile.BaseStream, playerData);
                         goalieDataFile.Close();

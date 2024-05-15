@@ -49,10 +49,6 @@ C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/obj/Release/net6.0/RoadToSchmalz.ge
 C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/obj/Release/net6.0/ref/RoadToSchmalz.dll
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/appsettings.Development.json
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/appsettings.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/dat/goalie_data.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/dat/matchups.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/dat/player_data.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/dat/team_data.json
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/RoadToSchmalz.staticwebassets.runtime.json
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/RoadToSchmalz
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Release/net6.0/RoadToSchmalz.deps.json

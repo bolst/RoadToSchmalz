@@ -20,7 +20,7 @@ namespace RoadToSchmalz.Api
 
         private Dictionary<string, string> GetTeamIdNameMap()
         {
-            string fileContent = File.ReadAllText("dat/team_data.json");
+            string fileContent = File.ReadAllText("wwwroot/dat/team_data.json");
             List<Data.Teams>? data = JsonSerializer.Deserialize<List<Data.Teams>>(fileContent);
 
             if (data == null) return new Dictionary<string, string>();

@@ -16,7 +16,7 @@ namespace RoadToSchmalz.Api
 
         public int GetCurrentRound()
         {
-            string fileContent = File.ReadAllText("dat/matchups.json");
+            string fileContent = File.ReadAllText("wwwroot/dat/matchups.json");
             List<Data.Matchups>? data = JsonSerializer.Deserialize<List<Data.Matchups>>(fileContent);
 
             string strRound = data.MaxBy(x => int.Parse(x.round)).round;
@@ -25,7 +25,7 @@ namespace RoadToSchmalz.Api
 
         public List<Data.Matchups>? GetMatchups(Divisions.DIVISION division = Divisions.DIVISION.NULL, int currentRound = 0)
         {
-            string fileContent = File.ReadAllText("dat/matchups.json");
+            string fileContent = File.ReadAllText("wwwroot/dat/matchups.json");
             List<Data.Matchups>? data = JsonSerializer.Deserialize<List<Data.Matchups>>(fileContent);
             data = FilterByDivision(data, division, currentRound);
             return data;
@@ -107,14 +107,14 @@ namespace RoadToSchmalz.Api
                     {
                         teamList.Add(team.Value);
                     }
-                    await using (var teamFile = System.IO.File.CreateText("dat/team_data.json"))
+                    await using (var teamFile = System.IO.File.CreateText("wwwroot/dat/team_data.json"))
                     {
                         await JsonSerializer.SerializeAsync(teamFile.BaseStream, teamList);
                     }
 
                     // Get matchups
                     var matchupsData = data.RootElement.GetProperty("SiteKit").GetProperty("Brackets").GetProperty("rounds");
-                    await using (var matchupsFile = System.IO.File.CreateText("dat/matchups.json"))
+                    await using (var matchupsFile = System.IO.File.CreateText("wwwroot/dat/matchups.json"))
                     {
                         await JsonSerializer.SerializeAsync(matchupsFile.BaseStream, matchupsData);
                     }

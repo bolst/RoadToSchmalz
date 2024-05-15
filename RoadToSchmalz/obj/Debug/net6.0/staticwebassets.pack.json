@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets/css/blazor-ui.css"
     },
     {
+      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/goalie_data.json",
+      "PackagePath": "staticwebassets/dat/goalie_data.json"
+    },
+    {
+      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/matchups.json",
+      "PackagePath": "staticwebassets/dat/matchups.json"
+    },
+    {
+      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/player_data.json",
+      "PackagePath": "staticwebassets/dat/player_data.json"
+    },
+    {
+      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/team_data.json",
+      "PackagePath": "staticwebassets/dat/team_data.json"
+    },
+    {
       "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

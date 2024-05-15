@@ -1,10 +1,6 @@
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/RoadToSchmalz
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/appsettings.Development.json
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/appsettings.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/dat/goalie_data.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/dat/matchups.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/dat/player_data.json
-/Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/dat/team_data.json
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/RoadToSchmalz.dll
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/RoadToSchmalz.deps.json
 /Users/nic/git/RoadToSchmalz/RoadToSchmalz/bin/Publish/RoadToSchmalz.runtimeconfig.json
