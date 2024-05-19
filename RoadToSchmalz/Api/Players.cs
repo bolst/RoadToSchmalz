@@ -31,6 +31,7 @@ namespace RoadToSchmalz.Api
 
         public async Task FetchData()
         {
+            return;
             string url = "https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=players&season=67&team=all&position=skaters&rookies=0&statsType=standard&rosterstatus=undefined&site_id=2&first=0&limit=20&sort=points&league_id=1&lang=en&division=-1&key=54ad32ee30e379ad&client_code=pjhlon&league_id=1&callback=angular.callbacks._2";
 
             try

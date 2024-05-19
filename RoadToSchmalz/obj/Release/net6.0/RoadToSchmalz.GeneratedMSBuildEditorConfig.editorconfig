@@ -9,79 +9,79 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RoadToSchmalz
 build_property.RootNamespace = RoadToSchmalz
-build_property.ProjectDir = /Users/nic/git/RoadToSchmalz/RoadToSchmalz/
+build_property.ProjectDir = C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/nic/git/RoadToSchmalz/RoadToSchmalz
+build_property.MSBuildProjectDirectory = C:\Users\Nic\git\RoadToSchmalz\RoadToSchmalz
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/App.razor]
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Components/FinalsTeam.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9GaW5hbHNUZWFtLnJhem9y
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/FinalsTeam.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGaW5hbHNUZWFtLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Components/Layout/FooterMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvRm9vdGVyTWVudS5yYXpvcg==
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/Layout/FooterMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcRm9vdGVyTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Components/Layout/TopMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvVG9wTWVudS5yYXpvcg==
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/Layout/TopMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcVG9wTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Components/Matchup.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9NYXRjaHVwLnJhem9y
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/Matchup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXRjaHVwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Components/RoundDepthPicker.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3VuZERlcHRoUGlja2VyLnJhem9y
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/RoundDepthPicker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3VuZERlcHRoUGlja2VyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Components/StatCard.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TdGF0Q2FyZC5yYXpvcg==
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Components/StatCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdGF0Q2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Layouts/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0cy9NYWluTGF5b3V0LnJhem9y
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Layouts/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xNYWluTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Leaders/Top Goalies/TopGoalies.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGVhZGVycy9Ub3AgR29hbGllcy9Ub3BHb2FsaWVzLnJhem9y
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Leaders/Top Goalies/TopGoalies.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhZGVyc1xUb3AgR29hbGllc1xUb3BHb2FsaWVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Leaders/Top Players/TopPlayers.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGVhZGVycy9Ub3AgUGxheWVycy9Ub3BQbGF5ZXJzLnJhem9y
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Leaders/Top Players/TopPlayers.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVhZGVyc1xUb3AgUGxheWVyc1xUb3BQbGF5ZXJzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Series/Game.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VyaWVzL0dhbWUucmF6b3I=
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Series/Game.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VyaWVzXEdhbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Series/Series.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VyaWVzL1Nlcmllcy5yYXpvcg==
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Series/Series.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VyaWVzXFNlcmllcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/_Imports.razor]
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nic/git/RoadToSchmalz/RoadToSchmalz/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+[C:/Users/Nic/git/RoadToSchmalz/RoadToSchmalz/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

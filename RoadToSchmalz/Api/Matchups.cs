@@ -87,6 +87,7 @@ namespace RoadToSchmalz.Api
 
         public async Task FetchData()
         {
+            return;
             string url = "https://lscluster.hockeytech.com/feed/index.php?feed=modulekit&view=brackets&fmt=json&season_id=67&key=54ad32ee30e379ad&client_code=pjhlon&site_id=2&lang=en&league_id=&callback=angular.callbacks._1";
 
             try

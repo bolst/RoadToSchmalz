@@ -1,311 +1,311 @@
 {
   "Files": [
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/bolton.jpg",
-      "PackagePath": "staticwebassets/bolton.jpg"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\bolton.jpg",
+      "PackagePath": "staticwebassets\\bolton.jpg"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/brand-logo.png",
-      "PackagePath": "staticwebassets/brand-logo.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\brand-logo.png",
+      "PackagePath": "staticwebassets\\brand-logo.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/css/blazor-ui.css",
-      "PackagePath": "staticwebassets/css/blazor-ui.css"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\css\\blazor-ui.css",
+      "PackagePath": "staticwebassets\\css\\blazor-ui.css"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/goalie_data.json",
-      "PackagePath": "staticwebassets/dat/goalie_data.json"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\dat\\goalie_data.json",
+      "PackagePath": "staticwebassets\\dat\\goalie_data.json"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/matchups.json",
-      "PackagePath": "staticwebassets/dat/matchups.json"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\dat\\matchups.json",
+      "PackagePath": "staticwebassets\\dat\\matchups.json"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/player_data.json",
-      "PackagePath": "staticwebassets/dat/player_data.json"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\dat\\player_data.json",
+      "PackagePath": "staticwebassets\\dat\\player_data.json"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/dat/team_data.json",
-      "PackagePath": "staticwebassets/dat/team_data.json"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\dat\\team_data.json",
+      "PackagePath": "staticwebassets\\dat\\team_data.json"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/headshot-default.jpg",
-      "PackagePath": "staticwebassets/headshot-default.jpg"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\headshot-default.jpg",
+      "PackagePath": "staticwebassets\\headshot-default.jpg"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AllistonHornets.png",
-      "PackagePath": "staticwebassets/logos/AllistonHornets.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AllistonHornets.png",
+      "PackagePath": "staticwebassets\\logos\\AllistonHornets.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AmherstburgAdmirals.png",
-      "PackagePath": "staticwebassets/logos/AmherstburgAdmirals.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AmherstburgAdmirals.png",
+      "PackagePath": "staticwebassets\\logos\\AmherstburgAdmirals.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AmherstviewJets.png",
-      "PackagePath": "staticwebassets/logos/AmherstviewJets.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AmherstviewJets.png",
+      "PackagePath": "staticwebassets\\logos\\AmherstviewJets.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/AylmerSpitfires.png",
-      "PackagePath": "staticwebassets/logos/AylmerSpitfires.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\AylmerSpitfires.png",
+      "PackagePath": "staticwebassets\\logos\\AylmerSpitfires.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/BlenheimBlades.png",
-      "PackagePath": "staticwebassets/logos/BlenheimBlades.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\BlenheimBlades.png",
+      "PackagePath": "staticwebassets\\logos\\BlenheimBlades.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/CaledonGoldenHawks.png",
-      "PackagePath": "staticwebassets/logos/CaledonGoldenHawks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\CaledonGoldenHawks.png",
+      "PackagePath": "staticwebassets\\logos\\CaledonGoldenHawks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/CampbellfordRebels.png",
-      "PackagePath": "staticwebassets/logos/CampbellfordRebels.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\CampbellfordRebels.png",
+      "PackagePath": "staticwebassets\\logos\\CampbellfordRebels.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ClaringtonEagles.png",
-      "PackagePath": "staticwebassets/logos/ClaringtonEagles.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ClaringtonEagles.png",
+      "PackagePath": "staticwebassets\\logos\\ClaringtonEagles.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DorchesterDolphins.png",
-      "PackagePath": "staticwebassets/logos/DorchesterDolphins.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DorchesterDolphins.png",
+      "PackagePath": "staticwebassets\\logos\\DorchesterDolphins.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DresdenKings.png",
-      "PackagePath": "staticwebassets/logos/DresdenKings.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DresdenKings.png",
+      "PackagePath": "staticwebassets\\logos\\DresdenKings.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DundasBlues.png",
-      "PackagePath": "staticwebassets/logos/DundasBlues.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DundasBlues.png",
+      "PackagePath": "staticwebassets\\logos\\DundasBlues.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/DunnvilleMudcats.png",
-      "PackagePath": "staticwebassets/logos/DunnvilleMudcats.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\DunnvilleMudcats.png",
+      "PackagePath": "staticwebassets\\logos\\DunnvilleMudcats.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/Essex73s.png",
-      "PackagePath": "staticwebassets/logos/Essex73s.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\Essex73s.png",
+      "PackagePath": "staticwebassets\\logos\\Essex73s.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ExeterHawks.png",
-      "PackagePath": "staticwebassets/logos/ExeterHawks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ExeterHawks.png",
+      "PackagePath": "staticwebassets\\logos\\ExeterHawks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/FergusWhalers.png",
-      "PackagePath": "staticwebassets/logos/FergusWhalers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\FergusWhalers.png",
+      "PackagePath": "staticwebassets\\logos\\FergusWhalers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/FrankfordHuskies.png",
-      "PackagePath": "staticwebassets/logos/FrankfordHuskies.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\FrankfordHuskies.png",
+      "PackagePath": "staticwebassets\\logos\\FrankfordHuskies.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GeorginaIce.png",
-      "PackagePath": "staticwebassets/logos/GeorginaIce.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GeorginaIce.png",
+      "PackagePath": "staticwebassets\\logos\\GeorginaIce.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GlanbrookRangers.png",
-      "PackagePath": "staticwebassets/logos/GlanbrookRangers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GlanbrookRangers.png",
+      "PackagePath": "staticwebassets\\logos\\GlanbrookRangers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GoderichFlyers.png",
-      "PackagePath": "staticwebassets/logos/GoderichFlyers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GoderichFlyers.png",
+      "PackagePath": "staticwebassets\\logos\\GoderichFlyers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/GrimsbyPeachKings.png",
-      "PackagePath": "staticwebassets/logos/GrimsbyPeachKings.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\GrimsbyPeachKings.png",
+      "PackagePath": "staticwebassets\\logos\\GrimsbyPeachKings.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HagersvilleHawks.png",
-      "PackagePath": "staticwebassets/logos/HagersvilleHawks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HagersvilleHawks.png",
+      "PackagePath": "staticwebassets\\logos\\HagersvilleHawks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HanoverBarons.png",
-      "PackagePath": "staticwebassets/logos/HanoverBarons.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HanoverBarons.png",
+      "PackagePath": "staticwebassets\\logos\\HanoverBarons.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HespelerShamrocks.png",
-      "PackagePath": "staticwebassets/logos/HespelerShamrocks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HespelerShamrocks.png",
+      "PackagePath": "staticwebassets\\logos\\HespelerShamrocks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/HuntsvilleOtters.png",
-      "PackagePath": "staticwebassets/logos/HuntsvilleOtters.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\HuntsvilleOtters.png",
+      "PackagePath": "staticwebassets\\logos\\HuntsvilleOtters.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/InnisfilSpartans.png",
-      "PackagePath": "staticwebassets/logos/InnisfilSpartans.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\InnisfilSpartans.png",
+      "PackagePath": "staticwebassets\\logos\\InnisfilSpartans.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/KincardineBulldogs.png",
-      "PackagePath": "staticwebassets/logos/KincardineBulldogs.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\KincardineBulldogs.png",
+      "PackagePath": "staticwebassets\\logos\\KincardineBulldogs.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LakefieldChiefs.png",
-      "PackagePath": "staticwebassets/logos/LakefieldChiefs.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LakefieldChiefs.png",
+      "PackagePath": "staticwebassets\\logos\\LakefieldChiefs.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LakeshoreCanadiens.png",
-      "PackagePath": "staticwebassets/logos/LakeshoreCanadiens.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LakeshoreCanadiens.png",
+      "PackagePath": "staticwebassets\\logos\\LakeshoreCanadiens.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LittleBritainMerchants.png",
-      "PackagePath": "staticwebassets/logos/LittleBritainMerchants.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LittleBritainMerchants.png",
+      "PackagePath": "staticwebassets\\logos\\LittleBritainMerchants.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/LucanIrish.png",
-      "PackagePath": "staticwebassets/logos/LucanIrish.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\LucanIrish.png",
+      "PackagePath": "staticwebassets\\logos\\LucanIrish.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MidlandFlyers.png",
-      "PackagePath": "staticwebassets/logos/MidlandFlyers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MidlandFlyers.png",
+      "PackagePath": "staticwebassets\\logos\\MidlandFlyers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MitchellHawks.png",
-      "PackagePath": "staticwebassets/logos/MitchellHawks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MitchellHawks.png",
+      "PackagePath": "staticwebassets\\logos\\MitchellHawks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MooretownFlags.png",
-      "PackagePath": "staticwebassets/logos/MooretownFlags.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MooretownFlags.png",
+      "PackagePath": "staticwebassets\\logos\\MooretownFlags.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/MountForestPatriots.png",
-      "PackagePath": "staticwebassets/logos/MountForestPatriots.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\MountForestPatriots.png",
+      "PackagePath": "staticwebassets\\logos\\MountForestPatriots.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/Mt.BrydgesBulldogs.png",
-      "PackagePath": "staticwebassets/logos/Mt.BrydgesBulldogs.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\Mt.BrydgesBulldogs.png",
+      "PackagePath": "staticwebassets\\logos\\Mt.BrydgesBulldogs.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NapaneeRaiders.png",
-      "PackagePath": "staticwebassets/logos/NapaneeRaiders.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NapaneeRaiders.png",
+      "PackagePath": "staticwebassets\\logos\\NapaneeRaiders.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NewHamburgFirebirds.png",
-      "PackagePath": "staticwebassets/logos/NewHamburgFirebirds.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NewHamburgFirebirds.png",
+      "PackagePath": "staticwebassets\\logos\\NewHamburgFirebirds.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NiagaraRiverHawks.png",
-      "PackagePath": "staticwebassets/logos/NiagaraRiverHawks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NiagaraRiverHawks.png",
+      "PackagePath": "staticwebassets\\logos\\NiagaraRiverHawks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NorthKawarthaKnights.png",
-      "PackagePath": "staticwebassets/logos/NorthKawarthaKnights.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NorthKawarthaKnights.png",
+      "PackagePath": "staticwebassets\\logos\\NorthKawarthaKnights.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NorthMiddlesexStars.png",
-      "PackagePath": "staticwebassets/logos/NorthMiddlesexStars.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NorthMiddlesexStars.png",
+      "PackagePath": "staticwebassets\\logos\\NorthMiddlesexStars.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/NorwichMerchants.png",
-      "PackagePath": "staticwebassets/logos/NorwichMerchants.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\NorwichMerchants.png",
+      "PackagePath": "staticwebassets\\logos\\NorwichMerchants.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/OrilliaTerriers.png",
-      "PackagePath": "staticwebassets/logos/OrilliaTerriers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\OrilliaTerriers.png",
+      "PackagePath": "staticwebassets\\logos\\OrilliaTerriers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ParisTitans.png",
-      "PackagePath": "staticwebassets/logos/ParisTitans.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ParisTitans.png",
+      "PackagePath": "staticwebassets\\logos\\ParisTitans.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PenetangKings.png",
-      "PackagePath": "staticwebassets/logos/PenetangKings.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PenetangKings.png",
+      "PackagePath": "staticwebassets\\logos\\PenetangKings.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PetroliaFlyers.png",
-      "PackagePath": "staticwebassets/logos/PetroliaFlyers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PetroliaFlyers.png",
+      "PackagePath": "staticwebassets\\logos\\PetroliaFlyers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PictonPirates.png",
-      "PackagePath": "staticwebassets/logos/PictonPirates.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PictonPirates.png",
+      "PackagePath": "staticwebassets\\logos\\PictonPirates.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortDoverSailors.png",
-      "PackagePath": "staticwebassets/logos/PortDoverSailors.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortDoverSailors.png",
+      "PackagePath": "staticwebassets\\logos\\PortDoverSailors.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortHopePanthers.png",
-      "PackagePath": "staticwebassets/logos/PortHopePanthers.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortHopePanthers.png",
+      "PackagePath": "staticwebassets\\logos\\PortHopePanthers.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortPerryLumberjacks.png",
-      "PackagePath": "staticwebassets/logos/PortPerryLumberjacks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortPerryLumberjacks.png",
+      "PackagePath": "staticwebassets\\logos\\PortPerryLumberjacks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/PortStanleySailors.png",
-      "PackagePath": "staticwebassets/logos/PortStanleySailors.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\PortStanleySailors.png",
+      "PackagePath": "staticwebassets\\logos\\PortStanleySailors.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/SchombergCougars.png",
-      "PackagePath": "staticwebassets/logos/SchombergCougars.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\SchombergCougars.png",
+      "PackagePath": "staticwebassets\\logos\\SchombergCougars.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/StaynerSiskins.png",
-      "PackagePath": "staticwebassets/logos/StaynerSiskins.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\StaynerSiskins.png",
+      "PackagePath": "staticwebassets\\logos\\StaynerSiskins.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/TavistockBraves.png",
-      "PackagePath": "staticwebassets/logos/TavistockBraves.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\TavistockBraves.png",
+      "PackagePath": "staticwebassets\\logos\\TavistockBraves.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/ThamesfordTrojans.png",
-      "PackagePath": "staticwebassets/logos/ThamesfordTrojans.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\ThamesfordTrojans.png",
+      "PackagePath": "staticwebassets\\logos\\ThamesfordTrojans.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/UxbridgeBruins.png",
-      "PackagePath": "staticwebassets/logos/UxbridgeBruins.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\UxbridgeBruins.png",
+      "PackagePath": "staticwebassets\\logos\\UxbridgeBruins.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WalkertonCapitals.png",
-      "PackagePath": "staticwebassets/logos/WalkertonCapitals.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WalkertonCapitals.png",
+      "PackagePath": "staticwebassets\\logos\\WalkertonCapitals.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WalpoleIslandWild.png",
-      "PackagePath": "staticwebassets/logos/WalpoleIslandWild.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WalpoleIslandWild.png",
+      "PackagePath": "staticwebassets\\logos\\WalpoleIslandWild.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WellesleyApplejacks.png",
-      "PackagePath": "staticwebassets/logos/WellesleyApplejacks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WellesleyApplejacks.png",
+      "PackagePath": "staticwebassets\\logos\\WellesleyApplejacks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WheatleyOmsteadSharks.png",
-      "PackagePath": "staticwebassets/logos/WheatleyOmsteadSharks.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WheatleyOmsteadSharks.png",
+      "PackagePath": "staticwebassets\\logos\\WheatleyOmsteadSharks.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WinghamIronmen.png",
-      "PackagePath": "staticwebassets/logos/WinghamIronmen.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WinghamIronmen.png",
+      "PackagePath": "staticwebassets\\logos\\WinghamIronmen.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/WoodstockNavyVets.png",
-      "PackagePath": "staticwebassets/logos/WoodstockNavyVets.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\WoodstockNavyVets.png",
+      "PackagePath": "staticwebassets\\logos\\WoodstockNavyVets.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/pjhl.png",
-      "PackagePath": "staticwebassets/logos/pjhl.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\pjhl.png",
+      "PackagePath": "staticwebassets\\logos\\pjhl.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/logos/playoffs.png",
-      "PackagePath": "staticwebassets/logos/playoffs.png"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\logos\\playoffs.png",
+      "PackagePath": "staticwebassets\\logos\\playoffs.png"
     },
     {
-      "Id": "/Users/nic/git/RoadToSchmalz/RoadToSchmalz/wwwroot/script.js",
-      "PackagePath": "staticwebassets/script.js"
+      "Id": "C:\\Users\\Nic\\git\\RoadToSchmalz\\RoadToSchmalz\\wwwroot\\script.js",
+      "PackagePath": "staticwebassets\\script.js"
     },
     {
-      "Id": "obj/Release/net6.0/staticwebassets/msbuild.RoadToSchmalz.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.RoadToSchmalz.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Release/net6.0/staticwebassets/msbuild.build.RoadToSchmalz.props",
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.RoadToSchmalz.props",
       "PackagePath": "build\\RoadToSchmalz.props"
     },
     {
-      "Id": "obj/Release/net6.0/staticwebassets/msbuild.buildMultiTargeting.RoadToSchmalz.props",
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RoadToSchmalz.props",
       "PackagePath": "buildMultiTargeting\\RoadToSchmalz.props"
     },
     {
-      "Id": "obj/Release/net6.0/staticwebassets/msbuild.buildTransitive.RoadToSchmalz.props",
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.RoadToSchmalz.props",
       "PackagePath": "buildTransitive\\RoadToSchmalz.props"
     }
   ],
