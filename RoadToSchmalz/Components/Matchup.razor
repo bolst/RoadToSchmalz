@@ -1,0 +1,126 @@
+@namespace RoadToSchmalz.Components
+@inject NavigationManager navManager
+@inject IJSRuntime JSRuntime
+@inject HttpClient httpClient
+
+<div @onclick="@(e => DisplayGameStats())" style="cursor: pointer">
+    <Card Shadow="Shadow.Default">
+        <CardBody>
+            <Row RowColumns="RowColumns.Are2">
+                @if (Data != null && !Data.team1.Equals("0") && !Data.team2.Equals("0"))
+                {
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Div>
+                                @if (teamIdNameMap.ContainsKey(Data.team1))
+                                {
+                                    string team_name = teamIdNameMap[Data.team1];
+                                    string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
+                                    !Char.IsWhiteSpace(c)).ToArray());
+                                    string path = $"logos/{team_name_stripped}.png";
+                                    <Image Source="@path" Width="@ImageWidth" />
+                                }
+                            </Div>
+                            <Div>
+                                @RenderTeamWins(Data.team1_wins)
+                            </Div>
+                        </Div>
+
+                    </Column>
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Div>
+                                @if (teamIdNameMap.ContainsKey(Data.team2))
+                                {
+                                    string team_name = teamIdNameMap[Data.team2];
+                                    string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
+                                    !Char.IsWhiteSpace(c)).ToArray());
+                                    string path = $"logos/{team_name_stripped}.png";
+                                    <Image Source="@path" Width="@ImageWidth" />
+                                }
+                            </Div>
+                            <Div>
+                                @RenderTeamWins(Data.team2_wins)
+                            </Div>
+                        </Div>
+                    </Column>
+                }
+                else
+                {
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Figure Size="@logoSize">
+                            </Figure>
+                            <Text TextSize="TextSize.ExtraSmall"></Text>
+                        </Div>
+                    </Column>
+                    <Column TextAlignment="TextAlignment.Center">
+                        <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                            <Figure Size="@logoSize">
+                            </Figure>
+                            <Text TextSize="TextSize.ExtraSmall"></Text>
+                        </Div>
+                    </Column>
+                }
+            </Row>
+            @if (IsLive)
+            {
+                <Div Style="position:absolute; z-index:1; top:0px; left:3px;">
+                    <Icon Name="IconName.Circle" IconSize="IconSize.ExtraSmall" Style="color: #FF0000" />
+                </Div>
+            }
+        </CardBody>
+    </Card>
+</div>
+
+@code {
+    [Parameter] public Data.Matchup? Data { get; set; } = null;
+    [Parameter] public int Round { get; set; } = 1;
+
+    private bool IsMobile = false;
+
+    private bool IsLive = false;
+
+    private FigureSize logoSize = FigureSize.Is32x32;
+    private IFluentSizing ImageWidth = Width.Is100;
+
+    private RenderFragment RenderTeamWins(int wins)
+    {
+        TextColor color = (wins == 4) ? TextColor.Success : TextColor.Dark;
+        RenderFragment item = @<Paragraph TextSize="TextSize.Small" TextWeight="TextWeight.Bold" TextColor="@color">@wins
+    </Paragraph>
+    ;
+        return item;
+    }
+
+    Dictionary<string,string> teamIdNameMap = new();
+    protected override async Task OnInitializedAsync()
+    {
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+
+        teamIdNameMap = await Api.Teams.Instance().TeamIdNameMap(httpClient);
+
+        logoSize = IsMobile ? FigureSize.Is24x24 : FigureSize.Is32x32;
+
+        if (Data != null)
+        {
+            int i = Data.games.FindIndex(g => g.game_status.Contains("In Progress"));
+            IsLive = i >= 0;
+        }
+
+        if (!IsMobile)
+        {
+            ImageWidth = (Round == 5) ? Width.Is50 : Width.Is100;
+        }
+
+        base.OnInitialized();
+    }
+
+    private void DisplayGameStats()
+    {
+        if (Data != null)
+        {
+            navManager.NavigateTo($"/series?sletter={Data.series_letter}");
+        }
+    }
+}

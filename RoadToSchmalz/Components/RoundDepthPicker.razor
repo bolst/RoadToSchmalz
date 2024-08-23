@@ -1,0 +1,45 @@
+﻿@namespace RoadToSchmalz.Components
+@inject NavigationManager navManager
+
+<Dropdown>
+    <DropdownToggle Color="Color.Dark" TextWeight="TextWeight.Bold" Outline>
+        Round View
+    </DropdownToggle>
+    <DropdownMenu>
+        @foreach (KeyValuePair<string, int> RoundView in RoundViews)
+        {
+            string RV = RoundView.Key;
+            int i = RoundView.Value;
+            if (i == RoundViewLevel)
+            {
+                <DropdownItem Clicked="() => SetRoundViewLevel(i)" Background="Background.Secondary">@RV</DropdownItem>
+            }
+            else
+            {
+                <DropdownItem Clicked="() => SetRoundViewLevel(i)">@RV</DropdownItem>
+            }
+        }
+    </DropdownMenu>
+</Dropdown>
+
+@code {
+    [Parameter] public int RoundViewLevel { get; set; }
+    [Parameter] public EventCallback<int> RoundViewLevelChanged { get; set; }
+
+
+    private readonly Dictionary<string, int> RoundViews = new Dictionary<string, int>()
+{
+{"Division QF", 0},
+{"Division SF", 1},
+{"Division Finals", 2},
+{"Conference Finals", 3},
+{"Semi Finals", 4},
+{"Finals", 5},
+};
+
+    private void SetRoundViewLevel(int zoomLevel)
+    {
+        RoundViewLevel = zoomLevel;
+        navManager.NavigateTo($"/?rv={RoundViewLevel}", true);
+    }
+}

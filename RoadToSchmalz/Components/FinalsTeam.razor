@@ -1,0 +1,256 @@
+﻿@namespace RoadToSchmalz.Components
+@using RoadToSchmalz.Data
+@using RoadToSchmalz.Data.PlayerStats
+@using RoadToSchmalz.Data.GoalieStats
+@inject NavigationManager navManager
+@inject IJSRuntime JSRuntime
+@inject HttpClient httpClient
+
+<Div @onclick="@(e => DisplayGameStats())" style="cursor: pointer" Width="@MainDivWidth" Margin="Margin.IsAuto">
+    <Card Shadow="Shadow.Default" Margin="Margin.IsAuto">
+        <CardBody>
+            @if (Data != null && !Data.team1.Equals("0") && !Data.team2.Equals("0") && PlayerData != null && GoalieData
+            != null)
+            {
+                string team = "";
+                int wins = 0;
+                @if (Conference == Divisions.CONFERENCE.WEST)
+                {
+                    team = Data.team2;
+                    wins = Data.team2_wins;
+                }
+                else if (Conference == Divisions.CONFERENCE.EAST)
+                {
+                    team = Data.team1;
+                    wins = Data.team1_wins;
+                }
+                @if (Round == 6)
+                {
+
+                    <Row RowColumns="RowColumns.Are3">
+                        <Column>
+                            @foreach (PlayerStat stat in PlayerData)
+                            {
+                                string headshotSource = headshotSources[stat.row.name];
+                                <Row Margin="Margin.IsAuto.OnY">
+                                    <Column Margin="Margin.IsAuto">
+                                        <Figure Size="FigureSize.Is64x64">
+                                            <FigureImage Source="@headshotSource" AlternateText=""
+                                                Position="Position.Relative.Top.Is50.Translate.MiddleY" Rounded />
+                                        </Figure>
+                                    </Column>
+                                    <Column Margin="Margin.IsAuto">
+                                        <Row>
+                                            <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@stat.row.name</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">Points: @stat.row.points</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">Goals: @stat.row.goals</Text>
+                                        </Row>
+                                    </Column>
+                                </Row>
+                            }
+                        </Column>
+
+                        <Column TextAlignment="TextAlignment.Center">
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                <Div>
+                                    @if (teamIdNameMap.ContainsKey(team))
+                                    {
+                                        string team_name = teamIdNameMap[team];
+                                        string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
+                                        !Char.IsWhiteSpace(c)).ToArray());
+                                        string path = $"logos/{team_name_stripped}.png";
+                                        <Image Source="@path" Width="@ImageWidth" Margin="Margin.IsAuto" />
+                                    }
+                                </Div>
+                                <Div>
+                                    @RenderTeamWins(wins)
+                                </Div>
+                            </Div>
+
+                        </Column>
+
+                        <Column Margin="Margin.IsAuto.OnY">
+                            @foreach (GoalieStat stat in GoalieData)
+                            {
+                                string headshotSource = headshotSources[stat.row.name];
+                                <Row>
+                                    <Column Margin="Margin.IsAuto">
+                                        <Figure Size="FigureSize.Is64x64">
+                                            <FigureImage Source="@headshotSource" AlternateText=""
+                                                Position="Position.Relative.Top.Is50.Translate.MiddleY" Rounded />
+                                        </Figure>
+                                    </Column>
+                                    <Column Margin="Margin.IsAuto">
+                                        <Row>
+                                            <Text TextSize="TextSize.Small" TextWeight="TextWeight.Bold">@stat.row.name</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">GAA: @stat.row.goals_against_average</Text>
+                                        </Row>
+                                        <Row>
+                                            <Text TextSize="TextSize.Small">SV%: @stat.row.save_percentage</Text>
+                                        </Row>
+                                    </Column>
+                                </Row>
+                            }
+                        </Column>
+                    </Row>
+                }
+                else
+                {
+                    <Row RowColumns="RowColumns.Are2">
+
+                        <Column TextAlignment="TextAlignment.Center">
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                <Div>
+                                    @if (teamIdNameMap.ContainsKey(team))
+                                    {
+                                        string team_name = teamIdNameMap[team];
+                                        string team_name_stripped = new string(team_name.ToCharArray().Where(c =>
+                                        !Char.IsWhiteSpace(c)).ToArray());
+                                        string path = $"logos/{team_name_stripped}.png";
+                                        <Image Source="@path" Width="Width.Is100" Margin="Margin.IsAuto" />
+                                    }
+                                </Div>
+
+                            </Div>
+
+                        </Column>
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                @RenderTeamWins(wins)
+                            </Div>
+                        </Column>
+                    </Row>
+                }
+            }
+            else
+            {
+                <Column TextAlignment="TextAlignment.Center">
+                    <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                        <Figure Size="@logoSize">
+                        </Figure>
+                        <Text TextSize="TextSize.ExtraSmall"></Text>
+                    </Div>
+                </Column>
+                <Column TextAlignment="TextAlignment.Center">
+                    <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                        <Figure Size="@logoSize">
+                        </Figure>
+                        <Text TextSize="TextSize.ExtraSmall"></Text>
+                    </Div>
+                </Column>
+            }
+            @if (IsLive)
+            {
+                <Div Style="position:absolute; z-index:1; top:0px; left:3px;">
+                    <Icon Name="IconName.Circle" IconSize="IconSize.ExtraSmall" Style="color: #FF0000" />
+                </Div>
+            }
+        </CardBody>
+    </Card>
+</Div>
+
+@code {
+    [Parameter] public Data.Matchup? Data { get; set; } = null;
+    [Parameter] public int Round { get; set; } = 1;
+    [Parameter] public Divisions.CONFERENCE Conference { get; set; } = Divisions.CONFERENCE.WEST;
+
+    private bool IsMobile = false;
+
+    private bool IsLive = false;
+
+    private FigureSize logoSize = FigureSize.Is32x32;
+    private IFluentSizing ImageWidth = Width.Is100;
+    private IFluentSizing MainDivWidth = Width.Is100;
+
+    private string MT { get; set; } = "hi";
+
+    private RenderFragment RenderTeamWins(int wins)
+    {
+        TextColor color = (wins == 4) ? TextColor.Success : TextColor.Dark;
+        RenderFragment item = @<Paragraph TextSize="TextSize.Medium" TextWeight="TextWeight.Bold" TextColor="@color">@wins
+    </Paragraph>
+;
+        return item;
+    }
+
+    List<PlayerStat>? PlayerData { get; set; } = null;
+    List<GoalieStat>? GoalieData { get; set; } = null;
+
+    Dictionary<string, string> headshotSources = new();
+
+    Dictionary<string, string> teamIdNameMap = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+
+        teamIdNameMap = await Api.Teams.Instance().TeamIdNameMap(httpClient);
+
+        logoSize = IsMobile ? FigureSize.Is24x24 : FigureSize.Is32x32;
+
+        if (Data != null)
+        {
+            int i = Data.games.FindIndex(g => g.game_status.Contains("In Progress"));
+            IsLive = i >= 0;
+        }
+
+        if (!IsMobile)
+        {
+            ImageWidth = (Round == 5) ? Width.Is50 : Width.Is75;
+        }
+
+        if (IsMobile)
+        {
+            MainDivWidth = Width.Is100;
+        }
+        else
+        {
+            MainDivWidth = (Round == 6) ? Width.Is50 : ((Round == 5) ? Width.Is75 : Width.Is100);
+        }
+
+        try
+        {
+            string team_code = (Conference == Divisions.CONFERENCE.WEST) ? "LAK" : "CLA";
+            //await RoadToSchmalz.Api.Players.Instance().FetchData();
+            PlayerData = await RoadToSchmalz.Api.Players.Instance().GetStats(httpClient);
+            PlayerData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsPlayers(PlayerData, team_code);
+
+            //await RoadToSchmalz.Api.Goalies.Instance().FetchData();
+            GoalieData = await RoadToSchmalz.Api.Goalies.Instance().GetStats(httpClient);
+            GoalieData = RoadToSchmalz.Api.AbstractPlayer.FilterFinalsGoalies(GoalieData, team_code);
+
+            if (PlayerData != null && GoalieData != null)
+            {
+                foreach (PlayerStat stat in PlayerData)
+                {
+                    headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+                }
+                foreach (GoalieStat stat in GoalieData)
+                {
+                    headshotSources.Add(stat.row.name, Api.AbstractPlayer.GetHeadshotSource(stat.row.player_id));
+                }
+            }
+        }
+        catch (Exception exc)
+        {
+            MT = exc.ToString();
+        }
+
+        base.OnInitialized();
+    }
+
+    private void DisplayGameStats()
+    {
+        if (Data != null)
+        {
+            navManager.NavigateTo($"/series?sletter={Data.series_letter}");
+        }
+    }
+}

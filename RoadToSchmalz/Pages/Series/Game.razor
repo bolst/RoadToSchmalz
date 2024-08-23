@@ -1,0 +1,131 @@
+@inject NavigationManager navManager
+@inject IJSRuntime JSRuntime
+@inject HttpClient httpClient
+
+@if (GameData != null)
+{
+    string home_team = teamIdNameMap[GameData.home_team];
+    string away_team = teamIdNameMap[GameData.visiting_team];
+    string home_team_stripped = new string(home_team.ToCharArray().Where(c => !Char.IsWhiteSpace(c)).ToArray());
+    string away_team_stripped = new string(away_team.ToCharArray().Where(c => !Char.IsWhiteSpace(c)).ToArray());
+    string home_logo = $"logos/{home_team_stripped}.png";
+    string away_logo = $"logos/{away_team_stripped}.png";
+    <Row Width="Width.Is100" Margin="Margin.IsAuto">
+        <div @onclick="@(e => NavToGame(GameData.game_id))" style="cursor: pointer">
+            <Card Shadow="Shadow.Small">
+                <CardBody TextAlignment="TextAlignment.Center">
+                    <Row>
+                        @if (!IsMobile)
+                        {
+                            <Column>
+                            </Column>
+                        }
+                        <Column>
+                            <Figure Size="FigureSize.Is64x64" Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                <FigureImage Source="@home_logo" />
+                            </Figure>
+                        </Column>
+                        <Column>
+
+                            @ScoreHeading(GameData)
+
+                            <Text>@FormatDateTime(GameData.date_time)</Text>
+
+                            <br>
+
+                            @if (GameIsLiveOrComplete)
+                            {
+                                @GameStatusBadge(GameData)
+                            }
+                        </Column>
+                        <Column>
+                            <Figure Size="FigureSize.Is64x64" Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                <FigureImage Source="@away_logo" />
+                            </Figure>
+                        </Column>
+
+                        @if (!IsMobile)
+                        {
+                            <Column>
+                            </Column>
+                        }
+                    </Row>
+                </CardBody>
+            </Card>
+        </div>
+    </Row>
+}
+
+@code {
+    [Parameter] public Data.Game GameData { get; set; } = null;
+
+    private bool IsMobile = false;
+
+    private bool GameIsLiveOrComplete = false;
+
+    #region components
+    private RenderFragment<Data.Game> GameStatusBadge = (game) => @<Badge Color="Color.Success">@game.game_status</Badge>;
+    private RenderFragment<Data.Game> ScoreHeading = (game) => @<Heading
+        Position="Position.Relative.Top.Is50.Translate.MiddleY" Padding="Padding.Is3.FromBottom">@game.home_goal_count -
+        @game.visiting_goal_count</Heading>;
+    #endregion
+
+    Dictionary<string,string> teamIdNameMap = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+
+        if (IsMobile)
+        {
+            ScoreHeading = (game) => @<Heading>@game.home_goal_count - @game.visiting_goal_count</Heading>;
+        }
+        else
+        {
+            ScoreHeading = (game) => @<Heading Position="Position.Relative.Top.Is50.Translate.MiddleY"
+            Padding="Padding.Is3.FromBottom">@game.home_goal_count - @game.visiting_goal_count</Heading>;
+        }
+
+
+        if (GameData != null)
+        {
+            if (GameData.game_status.Contains("Final"))
+            {
+                GameStatusBadge = (game) => @<Badge Color="Color.Success">@game.game_status</Badge>;
+                GameIsLiveOrComplete = true;
+            }
+            else if (GameData.game_status.Contains("In Progress"))
+            {
+                GameStatusBadge = (game) => @<Badge Color="Color.Primary">
+        <Icon Name="IconName.Circle" IconSize="IconSize.Small" /> Live
+    </Badge>;
+                GameIsLiveOrComplete = true;
+            }
+            else
+            {
+                GameIsLiveOrComplete = false;
+            }
+
+            teamIdNameMap = await Api.Teams.Instance().TeamIdNameMap(httpClient);
+
+        }
+    }
+
+    private string FormatDateTime(string date_time)
+    {
+        string pattern = "yyyy-MM-dd HH:mm:ss";
+        DateTime parsedDate;
+
+        if (DateTime.TryParseExact(date_time, pattern, null, System.Globalization.DateTimeStyles.None, out parsedDate))
+        {
+            return (IsMobile ? parsedDate.ToString("MM/dd hh:mm") : parsedDate.ToString("MMM dd hh:mm")) +
+            parsedDate.ToString("tt").ToLower();
+        }
+        return date_time;
+    }
+
+    private void NavToGame(string game_id)
+    {
+        navManager.NavigateTo($"https://www.thepjhl.ca/stats/game-summary/{game_id}");
+    }
+}

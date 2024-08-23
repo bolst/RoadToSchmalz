@@ -1,0 +1,128 @@
+@namespace RoadToSchmalz.Components
+@inject NavigationManager navManager
+@inject IJSRuntime JSRuntime
+@inject HttpClient httpClient
+
+<Row Width="@RowWidth" Margin="Margin.IsAuto">
+    @if (Stats != null || GoalieStats != null)
+    {
+        <div @onclick="@(e => NavToPlayerProfile())" style="cursor: pointer">
+            <Card Shadow="Shadow.Default">
+                <CardBody TextAlignment="TextAlignment.Center">
+                    <Row RowColumns="@RowCols">
+                        @if (!IsMobile)
+                        {
+                            <Column>
+                                <Figure Size="FigureSize.Is128x128">
+                                    <FigureImage Source="@headshotSource" AlternateText=""
+                                        Position="Position.Relative.Top.Is50.Translate.MiddleY" Rounded />
+                                </Figure>
+                            </Column>
+                            <Column ColumnSize="ColumnSize.Is3">
+                                <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                    <Heading Size="HeadingSize.Is4">
+                                        @name</Heading>
+                                    <Heading Size="HeadingSize.Is6">
+                                        @teamName</Heading>
+                                </Div>
+                            </Column>
+                        }
+                        else
+                        {
+                            <Column>
+                                <Figure Size="FigureSize.Is128x128">
+                                    <FigureImage Source="@headshotSource" AlternateText="" Rounded />
+                                    <FigureCaption TextWeight="TextWeight.Bold" Padding="Padding.Is3.OnY">
+                                        @name</FigureCaption>
+                                    <FigureCaption>
+                                        @teamName</FigureCaption>
+                                </Figure>
+                            </Column>
+                        }
+                        <Column>
+                            <Div Position="Position.Relative.Top.Is50.Translate.MiddleY">
+                                @if (statsContent != null)
+                                {
+                                    foreach (string stat in statsContent)
+                                    {
+                                        <Heading Size="HeadingSize.Is5" TextWeight="TextWeight.Normal">
+                                            @stat
+                                        </Heading>
+                                    }
+                                }
+                            </Div>
+                        </Column>
+                    </Row>
+                </CardBody>
+            </Card>
+        </div>
+    }
+</Row>
+
+@code {
+    [Parameter] public string Type { get; set; } = "Player";
+    [Parameter] public RoadToSchmalz.Data.PlayerStats.PlayerStat? Stats { get; set; } = null;
+    [Parameter] public RoadToSchmalz.Data.GoalieStats.GoalieStat? GoalieStats { get; set; } = null;
+
+    private IFluentSizing RowWidth = Width.Is50;
+    private IFluentRowColumns RowCols = RowColumns.Are3;
+
+    private bool IsMobile { get; set; } = false;
+
+    private void NavToPlayerProfile()
+    {
+        string? player_id = "";
+        if (Stats != null) player_id = Stats.row.player_id;
+        else if (GoalieStats != null) player_id = GoalieStats.row.player_id;
+
+        navManager.NavigateTo($"https://www.thepjhl.ca/stats/player/{player_id}");
+    }
+
+    #region stats
+    private List<string>? statsContent { get; set; }
+    private string? teamName { get; set; }
+    private string? name { get; set; }
+    private string? headshotSource { get; set; }
+    #endregion
+
+    protected override async Task OnInitializedAsync()
+    {
+        IsMobile = await JSRuntime.InvokeAsync<bool>("isDevice");
+
+        if (IsMobile)
+        {
+            RowWidth = Width.Is100;
+            RowCols = RowColumns.Are2;
+        }
+
+        Dictionary<string,string> teamIdNameMap = await Api.Teams.Instance().TeamIdNameMap(httpClient);
+
+        if (Stats != null)
+        {
+            statsContent = new List<string>()
+            {
+            $"GP: {Stats.row.games_played}",
+            $"Points: {Stats.row.points}",
+            $"Goals: {Stats.row.goals}",
+            $"PIM: {Stats.row.penalty_minutes}",
+            };
+            teamName = teamIdNameMap[Stats.prop.team_code.teamLink];
+            name = Stats.row.name;
+            headshotSource = Api.AbstractPlayer.GetHeadshotSource(Stats.row.player_id);
+        }
+        else if (GoalieStats != null)
+        {
+            statsContent = new List<string>()
+{
+$"GP: {GoalieStats.row.games_played}",
+$"GAA: {GoalieStats.row.goals_against_average}",
+$"SV%: {GoalieStats.row.save_percentage}",
+$"Wins: {GoalieStats.row.wins}",
+};
+            teamName = teamIdNameMap[GoalieStats.prop.team_code.teamLink];
+            name = GoalieStats.row.name;
+            headshotSource = Api.AbstractPlayer.GetHeadshotSource(GoalieStats.row.player_id);
+        }
+        base.OnInitialized();
+    }
+}

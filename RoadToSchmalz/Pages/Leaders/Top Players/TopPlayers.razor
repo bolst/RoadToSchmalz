@@ -1,0 +1,32 @@
+@page "/topplayers"
+@namespace RoadToSchmalz.Pages.Leaders
+@using RoadToSchmalz.Data.PlayerStats
+@using RoadToSchmalz.Components
+@inject HttpClient httpClient
+
+@if (PlayerData != null)
+{
+    <Row RowColumns="RowColumns.Are1">
+        <Column>
+            @foreach (PlayerStat ps in PlayerData)
+            {
+                PlayerStat playerStat = ps;
+                <Row Padding="Padding.Is2.OnY">
+                    <StatCard Type="Player" Stats="@ps" />
+                </Row>
+            }
+        </Column>
+    </Row>
+}
+
+@code {
+
+    List<PlayerStat>? PlayerData { get; set; } = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RoadToSchmalz.Api.Players.Instance().FetchData();
+        PlayerData = await RoadToSchmalz.Api.Players.Instance().GetStats(httpClient);
+        PlayerData = RoadToSchmalz.Api.AbstractPlayer.FilterRemaining(PlayerData);
+    }
+}
