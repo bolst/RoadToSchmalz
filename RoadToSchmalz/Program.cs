@@ -1,25 +1,26 @@
 ﻿using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace RoadToSchmalz
 {
     public class Program
     {
-        public static async Task Main( string[] args )
+        public static async Task Main(string[] args)
         {
-            var builder = WebAssemblyHostBuilder.CreateDefault( args );
-            builder.RootComponents.Add<App>( "#app" );
+            var builder = WebAssemblyHostBuilder.CreateDefault(args);
+            builder.RootComponents.Add<App>("#app");
+            builder.RootComponents.Add<HeadOutlet>("head::after");
 
-            builder.Services.AddScoped( sp => new HttpClient { BaseAddress = new Uri( builder.HostEnvironment.BaseAddress ) } );
-
-            AddBlazorise( builder.Services );
+            AddBlazorise(builder.Services);
+            
+            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             await builder.Build().RunAsync();
         }
 
-        public static void AddBlazorise( IServiceCollection services )
+        public static void AddBlazorise(IServiceCollection services)
         {
             services
                 .AddBlazorise();
